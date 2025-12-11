@@ -56,7 +56,7 @@ export default function BusinessSection() {
               </div>
 
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <h3 className="text-[18px] font-bold text-gray-900 mb-3">
                   {card.title}
                 </h3>
 
