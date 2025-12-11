@@ -40,11 +40,11 @@ export default function Header() {
 
             {/* Desktop navigation (logo + menu on left) */}
             <nav className="hidden md:flex space-x-6 ml-4">
-              <a className="text-sm text-gray-800 hover:text-gray-900">Welding</a>
-              <a className="text-sm text-gray-800 hover:text-gray-900">HVAC</a>
-              <a className="text-sm text-gray-800 hover:text-gray-900">Carpentry</a>
-              <a className="text-sm text-gray-800 hover:text-gray-900">Healthcare</a>
-              <a className="text-sm text-gray-800 hover:text-gray-900">Support</a>
+              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Welding</a>
+              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">HVAC</a>
+              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Carpentry</a>
+              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Healthcare</a>
+              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Support</a>
             </nav>
           </div>
 

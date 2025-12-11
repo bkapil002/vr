@@ -17,7 +17,7 @@ const TradeVRSection = () => {
           <div className="flex-1  p-6 rounded-md ">
             <h2 className="text-3xl font-bold mb-4">Get Started with TradeVR</h2>
 
-            <p className="text-white mb-6 max-w-md">
+            <p className="text-black mb-6 max-w-md">
               Revolutionize trade skills training with a smarter, safer, and
               scalable virtual reality platform.
             </p>

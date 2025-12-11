@@ -98,13 +98,13 @@ const HeroSlider = () => {
           {/* Content */}
           <div className="relative h-full max-w-6xl mx-auto px-8 flex items-center">
             <div className="max-w-2xl">
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 leading-tight">
                 {slide.title}
               </h1>
-              <p className="text-sm md:text-lg text-gray-200 mb-6 md:mb-8 leading-relaxed">
+              <p className="text-[11px] md:text-[13px] lg:text-[15px] text-gray-200 mb-6 md:mb-8 leading-relaxed">
                 {slide.description}
               </p>
-              <button className="bg-[#0067B8] cursor-pointer text-white font-semibold px-6 py-2 md:px-8 md:py-4 rounded transition-colors duration-300">
+              <button className="bg-[#0067B8] cursor-pointer text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded transition-colors duration-300">
                 {slide.buttonText}
               </button>
             </div>

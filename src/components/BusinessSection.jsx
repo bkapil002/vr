@@ -36,7 +36,7 @@ export default function BusinessSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
-            <div key={index} className="flex flex-col bg-white border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+            <div key={index} className="flex flex-col bg-white border rounded-[3px] shadow-md border-gray-200 overflow-hidden   ">
               <div className="h-48 overflow-hidden">
                 <img 
                   src={card.image} 
