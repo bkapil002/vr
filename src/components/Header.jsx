@@ -99,7 +99,7 @@ export default function Header() {
             </div>
 
             {/* Desktop: Search Icon (NOW VISIBLE) */}
-            <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000]hidden md:block">
+            <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000] hidden md:block">
               <VscSearch size={18} />
             </button>
 
