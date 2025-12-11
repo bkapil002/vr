@@ -9,14 +9,14 @@ export default function Header() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   return (
-    <header className=" bg-white">
+    <header className="bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-16 flex items-center justify-between">
-          
-          {/* ---------------- LEFT AREA (desktop + mobile-left icons) ---------------- */}
+
+          {/* ---------------- LEFT AREA ---------------- */}
           <div className="flex items-center gap-6">
-            
-            {/* Mobile: menu + search */}
+
+            {/* Mobile menu + mobile search */}
             <div className="flex items-center gap-3 md:hidden">
               <button
                 onClick={() => setMobileMenu((p) => !p)}
@@ -30,7 +30,7 @@ export default function Header() {
               </button>
             </div>
 
-            {/* LOGO (center on mobile, left on desktop) */}
+            {/* LOGO */}
             <div className="flex md:flex-none justify-center md:justify-start flex-1 md:flex-none">
               <a href="/" className="inline-flex items-center gap-0">
                 <span className="text-[#D7B061] font-bold text-[25px]">Trade</span>
@@ -38,19 +38,26 @@ export default function Header() {
               </a>
             </div>
 
-            {/* Desktop navigation (logo + menu on left) */}
+            {/* Desktop navigation */}
             <nav className="hidden md:flex space-x-6 ml-4">
-              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Welding</a>
-              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">HVAC</a>
-              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Carpentry</a>
-              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Healthcare</a>
-              <a className="text-sm text-gray-800 cursor-pointer hover:text-gray-900">Support</a>
+              {["Welding", "HVAC", "Carpentry", "Healthcare", "Support"].map(
+                (item) => (
+                  <a
+                    key={item}
+                    className="text-sm text-gray-800 cursor-pointer hover:text-gray-900"
+                  >
+                    {item}
+                  </a>
+                )
+              )}
             </nav>
           </div>
 
           {/* ---------------- RIGHT AREA ---------------- */}
           <div className="flex items-center space-x-4">
+
             
+
             {/* Desktop only: All VR Products dropdown */}
             <div className="relative hidden md:block">
               <button
@@ -79,21 +86,23 @@ export default function Header() {
               {openProducts && (
                 <div className="absolute right-0 mt-4 w-56 bg-gray-100 rounded shadow-md z-20">
                   <ul className="py-1">
-                    <li>
-                      <a className="block px-4 py-2 text-sm hover:bg-gray-50">VR Headsets</a>
-                    </li>
-                    <li>
-                      <a className="block px-4 py-2 text-sm hover:bg-gray-50">VR Tools</a>
-                    </li>
-                    <li>
-                      <a className="block px-4 py-2 text-sm hover:bg-gray-50">Enterprise</a>
-                    </li>
+                    {["VR Headsets", "VR Tools", "Enterprise"].map((item) => (
+                      <li key={item}>
+                        <a className="block px-4 py-2 text-sm hover:bg-gray-50">
+                          {item}
+                        </a>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               )}
             </div>
 
-            {/* Cart */}
+            {/* Desktop: Search Icon (NOW VISIBLE) */}
+            <button className="relative p-2 rounded hover:bg-gray-50 text-gray-800 hidden md:block">
+              <VscSearch size={18} />
+            </button>
+            
             <button className="relative p-2 rounded hover:bg-gray-50 text-gray-800">
               <BsCart3 size={18} />
               <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-0.5 rounded-full">
@@ -106,7 +115,7 @@ export default function Header() {
               href="/signin"
               className="inline-flex items-center gap-2 px-3 py-1.5 text-sm text-gray-700 hover:text-gray-900 rounded"
             >
-              <span className="w-8 h-8 border rounded-full inline-flex items-center justify-center ">
+              <span className="w-8 h-8 border rounded-full inline-flex items-center justify-center">
                 <LuUserRoundPlus size={18} />
               </span>
             </a>
@@ -115,26 +124,22 @@ export default function Header() {
       </div>
 
       {/* ---------------- MOBILE MENU DROPDOWN ---------------- */}
-     {mobileMenu && (
-  <div className="md:hidden bg-gray-100">
-    <nav className="flex flex-col">
-      {[
-        "Welding",
-        "HVAC",
-        "Carpentry",
-        "Healthcare",
-        "Support",
-      ].map((item, index) => (
-        <a
-          key={index}
-          className="text-gray-800 text-[17px] px-4 py-4 border-b border-gray-200 hover:bg-gray-200"
-        >
-          {item}
-        </a>
-      ))}
-    </nav>
-  </div>
-)}
+      {mobileMenu && (
+        <div className="md:hidden bg-gray-100">
+          <nav className="flex flex-col">
+            {["Welding", "HVAC", "Carpentry", "Healthcare", "Support"].map(
+              (item, index) => (
+                <a
+                  key={index}
+                  className="text-gray-800 text-[17px] px-4 py-4 border-b border-gray-200 hover:bg-gray-200"
+                >
+                  {item}
+                </a>
+              )
+            )}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }
