@@ -12,11 +12,11 @@ const HeroSlider = () => {
         "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking.",
       buttonText: "Request a Demo",
       bgDesktop:
-        "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=2000&q=80",
+        "https://images.pexels.com/photos/4009622/pexels-photo-4009622.jpeg",
       bgTablet:
-        "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=1200&q=60",
+        "https://images.pexels.com/photos/4009622/pexels-photo-4009622.jpeg",
       bgMobile:
-        "https://images.unsplash.com/photo-1617791160505-6f00504e3519?w=800&q=60",
+        "https://images.pexels.com/photos/4009622/pexels-photo-4009622.jpeg",
     },
     {
       title: "Hands-On Skills Training in Virtual Reality",
@@ -24,11 +24,11 @@ const HeroSlider = () => {
         "Experience realistic welding, electrical work, and construction scenarios without the risks and costs of traditional training methods.",
       buttonText: "Learn More",
       bgDesktop:
-        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=2000&q=80",
+        "https://images.pexels.com/photos/7561998/pexels-photo-7561998.jpeg",
       bgTablet:
-        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=60",
+        "https://images.pexels.com/photos/7561998/pexels-photo-7561998.jpeg",
       bgMobile:
-        "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=60",
+        "https://images.pexels.com/photos/7561998/pexels-photo-7561998.jpeg",
     },
     {
       title: "Build Expertise Through Immersive Practice",
@@ -36,11 +36,11 @@ const HeroSlider = () => {
         "Master complex trade skills with interactive VR simulations that adapt to your learning pace and provide instant feedback.",
       buttonText: "Get Started",
       bgDesktop:
-        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=2000&q=80",
+        "https://images.pexels.com/photos/12960383/pexels-photo-12960383.jpeg",
       bgTablet:
-        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=60",
+        "https://images.pexels.com/photos/12960383/pexels-photo-12960383.jpeg",
       bgMobile:
-        "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=60",
+        "hhttps://images.pexels.com/photos/12960383/pexels-photo-12960383.jpeg",
     },
   ];
 
