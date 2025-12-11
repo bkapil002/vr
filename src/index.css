@@ -5,12 +5,13 @@
 
 
 *{
-  font-family: "Poppins", sans-serif;
+  font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-optical-sizing: auto;
+
 }
 body{
   background-color:white ;
-  font-family: "Poppins", sans-serif;
+  font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;

@@ -44,7 +44,7 @@ export default function Header() {
                 (item) => (
                   <a
                     key={item}
-                    className="text-sm text-gray-800 cursor-pointer hover:text-gray-900"
+                    className="text-sm cursor-pointer text-[#000000]"
                   >
                     {item}
                   </a>
@@ -62,7 +62,7 @@ export default function Header() {
             <div className="relative hidden md:block">
               <button
                 onClick={() => setOpenProducts((v) => !v)}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded text-sm text-gray-600 hover:text-gray-900 hover:bg-gray-50"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded text-sm text-[#000000] cursor-pointer hover:bg-gray-50"
               >
                 <span>All VR Products</span>
 
@@ -99,11 +99,11 @@ export default function Header() {
             </div>
 
             {/* Desktop: Search Icon (NOW VISIBLE) */}
-            <button className="relative p-2 rounded hover:bg-gray-50 text-gray-800 hidden md:block">
+            <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000]hidden md:block">
               <VscSearch size={18} />
             </button>
-            
-            <button className="relative p-2 rounded hover:bg-gray-50 text-gray-800">
+
+            <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000]">
               <BsCart3 size={18} />
               <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-0.5 rounded-full">
                 3
@@ -113,7 +113,7 @@ export default function Header() {
             {/* User */}
             <a
               href="/signin"
-              className="inline-flex items-center gap-2 px-3 py-1.5 text-sm text-gray-700 hover:text-gray-900 rounded"
+              className="inline-flex items-center gap-2 px-3 py-1.5 text-sm text-[#000000] rounded"
             >
               <span className="w-8 h-8 border rounded-full inline-flex items-center justify-center">
                 <LuUserRoundPlus size={18} />
@@ -131,7 +131,7 @@ export default function Header() {
               (item, index) => (
                 <a
                   key={index}
-                  className="text-gray-800 text-[17px] px-4 py-4 border-b border-gray-200 hover:bg-gray-200"
+                  className="text-[#000000] text-[17px] px-4 py-4 border-b border-gray-200 hover:bg-gray-200"
                 >
                   {item}
                 </a>

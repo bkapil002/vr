@@ -32,8 +32,8 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors duration-200">
-                  All VR Modules →
+                <a href="#" className="text-sm  text-gray-600 hover:text-blue-700 transition-colors duration-200">
+                  All VR Modules 
                 </a>
               </li>
             </ul>
@@ -144,7 +144,7 @@ export default function Footer() {
           {/* Language Selector */}
           <div className="flex text-gray-600 justify-center  text-xs lg:text-sm items-center gap-1">
            
-              <Globe className="w-4 h-4"  />
+              <Globe size={21}  />
               <span className="font-medium">English (US)</span>
           </div>
 
