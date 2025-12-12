@@ -1,8 +1,9 @@
 import React from "react";
-import weldingtraining from '../image/welding-training.jpg'
-import sterileprocessing from '../image/sterile-processing.jpg'
-import hvactraining from '../image/hvac-training.jpg'
-import woodwork from '../image/woodwork.jpg'
+import weldingtraining from "../image/welding-training.jpg";
+import sterileprocessing from "../image/sterile-processing.jpg";
+import hvactraining from "../image/hvac-training.jpg";
+import woodwork from "../image/woodwork.jpg";
+import play from "../image/play.png"
 const programs = [
   {
     title: "Welding Training",
@@ -30,7 +31,6 @@ const TrainingPrograms = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-
         {programs.map((p, index) => (
           <div
             key={index}
@@ -45,18 +45,11 @@ const TrainingPrograms = () => {
               />
 
               {/* Play Button Overlay */}
-              {/* <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-12 h-12 bg-red-500 flex items-center justify-center rounded-full cursor-pointer shadow-lg">
-                  <svg
-                    fill="#fff"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    width="20"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+              {(index === 0 || index === 2) && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img src={play} className="w-[56px] cursor-pointer"/>
                 </div>
-              </div> */}
+              )}
             </div>
 
             {/* Content */}
@@ -71,7 +64,6 @@ const TrainingPrograms = () => {
             </div>
           </div>
         ))}
-
       </div>
     </div>
   );

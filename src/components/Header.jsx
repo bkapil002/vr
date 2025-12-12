@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { LuUserRoundPlus } from "react-icons/lu";
-import { BsCart3 } from "react-icons/bs";
-import { VscSearch } from "react-icons/vsc";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
+import logo from "../image/logo.jpg"
+import signup from "../image/signup.png"
+import search from "../image/search.png"
+import crt from "../image/cart.png"
 
 export default function Header() {
   const [openProducts, setOpenProducts] = useState(false);
@@ -11,7 +12,7 @@ export default function Header() {
   return (
     <header className="bg-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="h-16 flex items-center justify-between">
+        <div className="h-15 flex items-center justify-between">
 
           {/* ---------------- LEFT AREA ---------------- */}
           <div className="flex items-center gap-6">
@@ -26,15 +27,14 @@ export default function Header() {
               </button>
 
               <button aria-label="Search" className="p-2 rounded hover:bg-gray-50">
-                <VscSearch size={20} />
+                <img src={search} className="w-[15px]"/>
               </button>
             </div>
 
             {/* LOGO */}
             <div className="flex md:flex-none justify-center md:justify-start flex-1 md:flex-none">
               <a href="/" className="inline-flex items-center gap-0">
-                <span className="text-[#D7B061] font-bold text-[25px]">Trade</span>
-                <span className="text-[#1E4F9D] font-bold text-[25px]">VR</span>
+                <img src={logo} className="w-27"/>
               </a>
             </div>
 
@@ -54,12 +54,12 @@ export default function Header() {
           </div>
 
           {/* ---------------- RIGHT AREA ---------------- */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-3">
 
             
 
             {/* Desktop only: All VR Products dropdown */}
-            <div className="relative hidden md:block">
+            <div className="relative hidden lg:block">
               <button
                 onClick={() => setOpenProducts((v) => !v)}
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded text-sm text-[#000000] cursor-pointer hover:bg-gray-50"
@@ -100,11 +100,11 @@ export default function Header() {
 
             {/* Desktop: Search Icon (NOW VISIBLE) */}
             <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000] hidden md:block">
-              <VscSearch size={18} />
+              <img src={search} className="w-[15px]"/>
             </button>
 
             <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000]">
-              <BsCart3 size={18} />
+              <img src={crt} className="w-[17px]"  />
               <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-0.5 rounded-full">
                 3
               </span>
@@ -115,9 +115,7 @@ export default function Header() {
               href="/signin"
               className="inline-flex items-center gap-2 px-3 py-1.5 text-sm text-gray-600 rounded"
             >
-              <span className="w-8 h-8 border rounded-full inline-flex items-center justify-center">
-                <LuUserRoundPlus size={18} />
-              </span>
+             <img src={signup} className="w-[39px]"/>
             </a>
           </div>
         </div>

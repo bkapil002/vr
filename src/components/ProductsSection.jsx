@@ -37,9 +37,9 @@ export default function ProductsSection() {
               className="flex flex-col items-center text-center group"
             >
               <div className="text-gray-800 mb-4 transition-transform duration-200 group-hover:scale-110">
-                <img src={product.icon}  className="w-10 h-10"/>
+                <img src={product.icon}  className="w-10 h-11"/>
               </div>
-              <span className="text-blue-600 hover:underline text-sm font-medium">
+              <span className="text-[#0D349C] hover:underline text-sm font-medium">
                 {product.title}
               </span>
             </a>

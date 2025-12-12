@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, ChevronDown } from 'lucide-react';
+import english from '../image/english.png'
 
 export default function Footer() {
   return (
@@ -144,7 +144,7 @@ export default function Footer() {
           {/* Language Selector */}
           <div className="flex text-gray-600 justify-center  text-xs lg:text-sm items-center gap-1">
            
-              <Globe size={21}  />
+              <img src={english} className='w-[21px]'/>
               <span className="font-medium">English (US)</span>
           </div>
 

@@ -61,7 +61,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-140 overflow-hidden ">
+    <div className="relative w-full h-120 overflow-hidden ">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
@@ -71,13 +71,11 @@ const HeroSlider = () => {
           }`}
           aria-hidden={index !== currentSlide}
         >
-          {/* Responsive Background using picture */}
+     
           <picture className="absolute inset-0 block w-full h-full">
-            {/* Desktop: min-width 1024px (tailwind lg breakpoint) */}
+    
             <source media="(min-width: 1024px)" srcSet={slide.bgDesktop} />
-            {/* Tablet: min-width 640px (tailwind sm) */}
             <source media="(min-width: 640px)" srcSet={slide.bgTablet} />
-            {/* Fallback / Mobile */}
             <img
               src={slide.bgMobile}
               alt={slide.title}
@@ -90,7 +88,7 @@ const HeroSlider = () => {
           <div className="absolute inset-0 "></div>
 
           {/* Content */}
-          <div className="relative h-full max-w-6xl mx-auto px-8 flex items-center">
+          <div className="relative h-full max-w-6xl  mx-auto px-8 flex items-center">
             <div className="max-w-2xl">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4 md:mb-6 leading-tight">
                 {slide.title}
