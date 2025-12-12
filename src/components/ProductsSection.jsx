@@ -39,7 +39,7 @@ export default function ProductsSection() {
               <div className="text-gray-800 mb-4 transition-transform duration-200 group-hover:scale-110">
                 <img src={product.icon}  className="w-10 h-11"/>
               </div>
-              <span className="text-[#0D349C] hover:underline text-sm font-medium">
+              <span className="text-[#0D349C] underline text-sm font-medium">
                 {product.title}
               </span>
             </a>

@@ -115,7 +115,7 @@ export default function Header() {
             {/* Cart - always visible on right (desktop & tablet & phone) */}
             <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000]">
               <img src={crt} className="w-[17px]" alt="cart" />
-              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-0.5 rounded-full">
+              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-[1px] rounded-full">
                 3
               </span>
             </button>

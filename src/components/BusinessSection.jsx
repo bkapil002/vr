@@ -41,9 +41,9 @@ export default function BusinessSection() {
   ];
 
   return (
-    <div className="  mt-20 py-20 px-4 sm:px-6 lg:px-8">
+    <div className="  mt-5 py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-900 mb-12">For business</h2>
+        <h2 className="text-3xl font-semibold text-gray-900 mb-5">For business</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
@@ -77,10 +77,10 @@ export default function BusinessSection() {
           ))}
         </div>
 
-          <div className="mt-20 pb-8 pt-8 flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center">
+          <div className="mt-18 pb-7 pt-8 flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center">
       {/* Social block: stays centered on phone, left-aligned on desktop */}
       <div className="flex items-center gap-4">
-        <span className="text-sm text-gray-600">Follow Trade VR</span>
+        <span className="text-[18px] text-gray-900">Follow Trade VR</span>
         <div className="flex items-center justify-center gap-3">
           <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
             <img src={Twitter} className="w-[20px] sm:w-[23px]" alt="Twitter" />

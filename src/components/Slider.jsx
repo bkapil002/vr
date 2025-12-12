@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight, Pause, Play } from 'lucide-react';
-import home from '../image/home.jpg'
-import home2 from '../image/tradeVR.jpg'
-
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
+import home from "../image/home.jpg";
+import home2 from "../image/tradeVR.jpg";
 
 const HeroSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -12,29 +11,29 @@ const HeroSlider = () => {
     {
       title: "Transforming Trade Education with VR & Cognitive Learning",
       description:
-        "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking.",
+        "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking, and accelerate hands-on skill development.",
       buttonText: "Request a Demo",
-      bgDesktop:home2,
-      bgTablet:home2,
-      bgMobile:home2,
+      bgDesktop: home2,
+      bgTablet: home2,
+      bgMobile: home2,
     },
     {
-      title: "Hands-On Skills Training in Virtual Reality",
+      title: "Transforming Trade Education with VR & Cognitive Learning",
       description:
-        "Experience realistic welding, electrical work, and construction scenarios without the risks and costs of traditional training methods.",
-      buttonText: "Learn More",
-      bgDesktop:home,
-      bgTablet:home,
-      bgMobile:home,
+        "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking, and accelerate hands-on skill development.",
+      buttonText: "Request a Demo",
+      bgDesktop: home,
+      bgTablet: home,
+      bgMobile: home,
     },
     {
-      title: "Build Expertise Through Immersive Practice",
+      title: "Transforming Trade Education with VR & Cognitive Learning",
       description:
-        "Master complex trade skills with interactive VR simulations that adapt to your learning pace and provide instant feedback.",
-      buttonText: "Get Started",
-      bgDesktop:home2,
-      bgTablet:home2,
-      bgMobile:home2,
+        "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking, and accelerate hands-on skill development.",
+      buttonText: "Request a Demo",
+      bgDesktop: home2,
+      bgTablet: home2,
+      bgMobile: home2,
     },
   ];
 
@@ -67,13 +66,13 @@ const HeroSlider = () => {
         <div
           key={index}
           className={`absolute inset-0 transition-opacity duration-700 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0 pointer-events-none'
+            index === currentSlide
+              ? "opacity-100"
+              : "opacity-0 pointer-events-none"
           }`}
           aria-hidden={index !== currentSlide}
         >
-     
-          <picture className="absolute inset-0 block w-full h-full">
-    
+          <picture className="absolute  inset-0 block w-full h-full">
             <source media="(min-width: 1024px)" srcSet={slide.bgDesktop} />
             <source media="(min-width: 640px)" srcSet={slide.bgTablet} />
             <img
@@ -85,18 +84,20 @@ const HeroSlider = () => {
           </picture>
 
           {/* Overlay */}
-          <div className="absolute inset-0 "></div>
+          <div className="absolute inset-0 bg-white/15"></div>
 
           {/* Content */}
-          <div className="relative h-full max-w-6xl  mx-auto px-8 flex items-center">
-            <div className="max-w-2xl">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-4 md:mb-6 leading-tight">
+          <div className="relative h-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 flex items-center">
+            <div className="max-w-[600px] text-center sm:text-left mx-auto sm:mx-0">
+              <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
                 {slide.title}
               </h1>
-              <p className="text-[11px] font-medium md:text-[13px] lg:text-[15px] text-black mb-6 md:mb-8 leading-relaxed">
+
+              <p className="text-[11px]  sm:text-[12px] md:text-[13px] lg:text-[15px] font-medium text-black mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                 {slide.description}
               </p>
-              <button className="bg-[#0067B8] cursor-pointer text-white font-semibold px-6 py-2 md:px-8 md:py-3 rounded transition-colors duration-300">
+
+              <button className="bg-[#0067B8] cursor-pointer text-white font-semibold px-4 py-1.5 sm:px-6 sm:py-2 md:px-8 md:py-2.5 rounded transition-colors duration-300">
                 {slide.buttonText}
               </button>
             </div>
@@ -110,7 +111,7 @@ const HeroSlider = () => {
         <button
           onClick={() => setIsAutoPlay(!isAutoPlay)}
           className="text-black transition-colors"
-          aria-label={isAutoPlay ? 'Pause' : 'Play'}
+          aria-label={isAutoPlay ? "Pause" : "Play"}
         >
           {isAutoPlay ? (
             <Pause size={16} className="sm:w-5 sm:h-5" />
@@ -136,8 +137,8 @@ const HeroSlider = () => {
               onClick={() => goToSlide(index)}
               className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all duration-300 ${
                 index === currentSlide
-                  ? 'bg-black w-6 sm:w-8'
-                  : 'bg-black/50 hover:bg-black/75'
+                  ? "bg-black w-6 sm:w-8"
+                  : "bg-black/50 hover:bg-black/75"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />
