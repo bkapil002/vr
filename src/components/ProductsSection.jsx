@@ -1,50 +1,26 @@
-import React from 'react';
-
+import world from "../image/glass.png"
+import adapter from "../image/adapter.png"
+import carpenter from "../image/carpenter.png"
+import healthinsurance from "../image/health-insurance.png"
 export default function ProductsSection() {
   const products = [
     {
-      icon: (
-        <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-          <rect x="1" y="1" width="10" height="10" />
-          <rect x="13" y="1" width="10" height="10" />
-          <rect x="1" y="13" width="10" height="10" />
-          <rect x="13" y="13" width="10" height="10" />
-        </svg>
-      ),
+      icon: world,
       title: "VR world",
       link: "#"
     },
     {
-      icon: (
-        <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-          <circle cx="12" cy="12" r="11" stroke="currentColor" strokeWidth="2" fill="none"/>
-          <path d="M12 2 L12 12 L22 12" strokeWidth="2"/>
-        </svg>
-      ),
+      icon: adapter,
       title: "VR HVAC",
       link: "#"
     },
     {
-      icon: (
-        <svg className="w-10 h-10" viewBox="0 0 24 24" fill="currentColor">
-          <rect x="1" y="1" width="10" height="10" />
-          <rect x="13" y="1" width="10" height="10" />
-          <rect x="1" y="13" width="10" height="10" />
-          <rect x="13" y="13" width="10" height="10" />
-        </svg>
-      ),
+      icon: carpenter,
       title: "VR Carpentry",
       link: "#"
     },
     {
-      icon: (
-        <svg className="w-10 h-10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <rect x="2" y="7" width="20" height="14" rx="2" />
-          <path d="M2 10 L22 10" />
-          <path d="M7 3 L7 7" />
-          <path d="M17 3 L17 7" />
-        </svg>
-      ),
+      icon: healthinsurance,
       title: "VR Strile ",
       link: "#"
     }
@@ -61,7 +37,7 @@ export default function ProductsSection() {
               className="flex flex-col items-center text-center group"
             >
               <div className="text-gray-800 mb-4 transition-transform duration-200 group-hover:scale-110">
-                {product.icon}
+                <img src={product.icon}  className="w-10 h-10"/>
               </div>
               <span className="text-blue-600 hover:underline text-sm font-medium">
                 {product.title}
