@@ -38,11 +38,10 @@ const HeroSlider = () => {
     },
   ];
 
-  // Create infinite loop slides (clone first + last)
   const slides = [
-    realSlides[realSlides.length - 1], // Clone last slide
+    realSlides[realSlides.length - 1], 
     ...realSlides,
-    realSlides[0], // Clone first slide
+    realSlides[0], 
   ];
 
   const totalSlides = slides.length;
