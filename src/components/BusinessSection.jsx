@@ -77,44 +77,34 @@ export default function BusinessSection() {
           ))}
         </div>
 
-        <div className="mt-20 pb-8 flex items-center justify-between  border-gray-200 pt-8">
-          <div className="flex items-center gap-4">
-            <span className="text-sm text-gray-600">Follow Trade VR</span>
-            <div className="flex justify-center text-center gap-3">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-               <img src={Twitter} className="w-[23px]"/>
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-               <img src={Linked} className="w-[21px]"/>
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                <img src={Google} className="w-[20px]"/>
-              </a>
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-900 transition-colors"
-              >
-                <img src={Facebook} className="w-[11px]"/>
-              </a>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            className="flex cursor-pointer bg-[#E6E6E6] py-2 px-3  rounded-[4px] items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
-          >
-            ↑ Back to top
+          <div className="mt-20 pb-8 pt-8 flex flex-col items-center gap-4 lg:flex-row lg:justify-between lg:items-center">
+      {/* Social block: stays centered on phone, left-aligned on desktop */}
+      <div className="flex items-center gap-4">
+        <span className="text-sm text-gray-600">Follow Trade VR</span>
+        <div className="flex items-center justify-center gap-3">
+          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <img src={Twitter} className="w-[20px] sm:w-[23px]" alt="Twitter" />
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <img src={Linked} className="w-[18px] sm:w-[21px]" alt="LinkedIn" />
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <img src={Google} className="w-[18px] sm:w-[20px]" alt="Google" />
+          </a>
+          <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <img src={Facebook} className="w-[10px] sm:w-[11px]" alt="Facebook" />
           </a>
         </div>
+      </div>
+
+      {/* Back to top: centered below on phone, right on desktop */}
+      <a
+        href="#"
+        className="flex cursor-pointer bg-[#E6E6E6] py-2 px-3 rounded-[4px] items-center gap-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+      >
+        ↑ Back to top
+      </a>
+    </div>
       </div>
     </div>
   );
