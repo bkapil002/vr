@@ -27,9 +27,9 @@ export default function ProductsSection() {
   ];
 
   return (
-    <div className="w-full  bg-white mt-10 py-20">
+    <div className="w-full   mt-10 py-20">
       <div className="max-w-3xl mx-auto px-6">
-        <div className="grid grid-cols-2 md:grid-cols-4 ">
+        <div className="grid grid-cols-2 md:grid-cols-4  gap-4">
           {products.map((product, index) => (
             <a
               key={index}
