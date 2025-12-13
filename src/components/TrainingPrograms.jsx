@@ -30,7 +30,7 @@ const programs = [
 const TrainingPrograms = () => {
   return (
    <div className="max-w-6xl mx-auto px-4 py-3 mt-[1px]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {programs.map((p, index) => (
           <div
             key={index}
