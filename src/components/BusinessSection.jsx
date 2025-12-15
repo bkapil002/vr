@@ -41,8 +41,8 @@ export default function BusinessSection() {
   ];
 
   return (
-    <div className=" mb-[90px] px-4 sm:px-6 lg:px-8">
-      <div className="max-w-[1400px]  mx-auto px-4 sm:px-6 lg:px-8">
+    <div className=" mb-[90px] ">
+      <div className="max-w-[1400px] ">
         <h2 className="text-3xl font-semibold text-gray-900 mb-5">Human-Centered & Inclusive</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

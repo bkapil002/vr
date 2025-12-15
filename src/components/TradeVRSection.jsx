@@ -2,7 +2,7 @@ import vrimg from "../image/tradeVR.jpg";
 
 const TradeVRSection = () => {
   return (
-    <div className="w-full flex justify-center mx-auto px-4 sm:px-6 md:px-10px  lg:px-[125px]   mb-[90px]">
+    <div className="w-full flex justify-center mx-auto  mb-[90px]">
       
       {/* Background Section */}
       <div
