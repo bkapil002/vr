@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <header className="bg-white">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px]  mx-auto px-4 sm:px-6 lg:px-8">
         {/* container is relative so we can center the logo on tablet/phone */}
         <div className="h-15 flex items-center justify-between relative">
 
@@ -92,19 +92,7 @@ export default function Header() {
                 </svg>
               </button>
 
-              {openProducts && (
-                <div className="absolute right-0 mt-4 w-56 bg-gray-100 rounded shadow-md z-30">
-                  <ul className="py-1">
-                    {["VR Headsets", "VR Tools", "Enterprise"].map((item) => (
-                      <li key={item}>
-                        <a className="block px-4 py-2 text-sm hover:bg-gray-50">
-                          {item}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+             
             </div>
 
             {/* Desktop: Search icon on the right (visible on lg and up) */}
