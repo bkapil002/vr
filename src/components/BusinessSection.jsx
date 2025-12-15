@@ -2,7 +2,7 @@ import React from "react";
 import { ChevronRight } from "lucide-react";
 import school from "../image/school.jpg";
 import workforce from "../image/workforce.jpg";
-import corporat from "../image/corporat.jpg";
+import NEET from "../image/NEET.png";
 import govttraining from "../image/govt-training.jpg";
 import Google from "../image/Google.png";
 import Linked from "../image/Linked.png";
@@ -28,7 +28,7 @@ export default function BusinessSection() {
       title: "NEET Participants",
       description:
         "Assisting NEET's  to have practical trade skills, rebuild confidence, and create sustainable career opportunities.",
-      image: corporat,
+      image: NEET,
       alt: "Corporate training",
     },
     {

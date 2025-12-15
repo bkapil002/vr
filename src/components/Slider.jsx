@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 import home from "../image/home.jpg";
-import home2 from "../image/tradeVR.jpg";
+import home2 from "../image/home2.jpg";
+
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -85,7 +86,7 @@ const Slider = () => {
         {slides.map((slide, index) => (
           <div key={index} className="min-w-full h-full relative">
             <picture className="absolute inset-0 block w-full h-full">
-              <source media="(w 1000000px)" srcSet={slide.bgDesktop} />
+              <source media="(min-width: 1024px)" srcSet={slide.bgDesktop} />
               <source media="(min-width: 640px)" srcSet={slide.bgTablet} />
               <img
                 src={slide.bgMobile}

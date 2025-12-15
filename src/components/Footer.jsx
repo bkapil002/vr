@@ -4,7 +4,7 @@ import english from '../image/english.png'
 export default function Footer() {
   return (
     <footer className="w-full bg-[#EFEFEF] from-gray-50 to-gray-100 border-t border-gray-200">
-      <div className="max-w-7xl  mx-auto px-4 sm:px-0 lg:px-[32px] py-12 lg:py-16">
+      <div className="max-w-6xl  mx-auto px-4 sm:px-0 md:px-2 lg:px-0 py-12 lg:py-16">
         {/* Top Section */}
         <div className="flex flex-col lg:flex-row  gap-5  justify-between ">
           {/* Products */}
