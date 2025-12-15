@@ -9,16 +9,7 @@ const Slider = () => {
   const sliderRef = useRef(null);
 
  const realSlides = [
-    {
-      title: "Transforming Trade Education with VR & Cognitive Learning",
-      description:
-        "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking, and accelerate hands-on skill development.",
-      buttonText: "Request a Demo",
-      bgDesktop: home2,
-      bgTablet: home2,
-      bgMobile: home2,
-    },
-    {
+  {
       title: "Transforming Trade Education with VR & Cognitive Learning",
       description:
         "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking, and accelerate hands-on skill development.",
@@ -111,7 +102,7 @@ const Slider = () => {
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[33px] font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
                   {slide.title}
                 </h1>
-                <p className="text-[11px] max-w-[400px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-medium text-black mb-4 sm:mb-5 md:mb-6 leading-relaxed">
+                <p className="text-[11px] max-w-[400px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-normal text-black mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                   {slide.description}
                 </p>
                 <button className="bg-[#0067B8] text-[12px] cursor-pointer text-white font-semibold px-4 py-1.5 sm:px-6 sm:py-2 md:px-8 md:py-2.5 rounded-[3px] transition-colors duration-300">
@@ -128,12 +119,12 @@ const Slider = () => {
         <div className="flex items-center gap-4">
 
           {/* Play / Pause */}
-          <button onClick={() => setIsAutoPlay(!isAutoPlay)}>
+          <button className="text-[#0D349C]" onClick={() => setIsAutoPlay(!isAutoPlay)}>
             {isAutoPlay ? <Pause size={16} /> : <Play size={16} />}
           </button>
 
           {/* Prev */}
-          <button onClick={slidePrev}>
+          <button className="text-[#0D349C]" onClick={slidePrev}>
             <ChevronLeft size={20} />
           </button>
 
@@ -145,15 +136,15 @@ const Slider = () => {
                 onClick={() => setCurrentSlide(index + 1)}
                 className={`h-2.5 rounded-full transition-all duration-300 ${
                   currentSlide === index + 1
-                    ? "bg-black w-6"
-                    : "bg-black/40 w-2.5"
+                    ? "bg-[#0D349C] border-2 border-[#0D349C] w-2.5"
+                    : "bg-white border-2 border-[#0D349C] w-2.5"
                 }`}
               />
             ))}
           </div>
 
           {/* Next */}
-          <button onClick={slideNext}>
+          <button className="text-[#0D349C]" onClick={slideNext}>
             <ChevronRight size={20} />
           </button>
 

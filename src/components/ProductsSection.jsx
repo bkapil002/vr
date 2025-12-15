@@ -6,7 +6,7 @@ export default function ProductsSection() {
   const products = [
     {
       icon: world,
-      title: "VR world",
+      title: "VR Weld",
       link: "#"
     },
     {
@@ -21,7 +21,7 @@ export default function ProductsSection() {
     },
     {
       icon: healthinsurance,
-      title: "VR Strile ",
+      title: "VR Sterile  ",
       link: "#"
     }
   ];
