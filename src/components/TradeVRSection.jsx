@@ -2,7 +2,7 @@ import vrimg from '../image/tradeVR.jpg'
 
 const TradeVRSection = () => {
   return (
-    <div className="w-full h-110 md:h-100 mt-22 flex justify-center mb-[90px] px-5">
+    <div className="w-full h-110 md:h-100 mt-22 flex justify-center mb-[88px] px-5">
       {/* This is now max-w-6xl WITH background image */}
       <div
         className="max-w-[1400px]  w-full bg-cover bg-center bg-no-repeat rounded-[5px] py-20  px-6  md:px-12"
