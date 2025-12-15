@@ -70,7 +70,7 @@ export default function BusinessSection() {
                   {card.description}
                 </p>
 
-                <button className="inline-flex items-center text-white bg-[#0067B8]  px-4 py-2 text-sm font-semibold transition-colors duration-200 self-start">
+                <button className="inline-flex items-center text-white bg-[#0067B8]  rounded-[2px] px-4 py-2 text-sm font-semibold transition-colors duration-200 self-start">
                   Learn more
                   <ChevronRight className="ml-1 w-4 h-4" />
                 </button>

@@ -25,11 +25,11 @@ const TradeVRSection = () => {
             </p>
 
             <div className="flex gap-4">
-              <button className="bg-[#0067B8] text-white text-sm font-semibold px-5 py-2 rounded">
+              <button className="bg-[#0067B8] text-white text-sm font-semibold px-5 py-2 rounded-[2px]">
                 Our Products
               </button>
 
-              <button className="bg-[#0067B8] text-white text-sm font-semibold px-5 py-2 rounded">
+              <button className="bg-[#0067B8] text-white text-sm font-semibold px-5 py-2 rounded-[2px]">
                 Request a Demo
               </button>
             </div>
