@@ -67,7 +67,7 @@ const TrainingPrograms = () => {
                 {p.desc}
               </p>
 
-              <button className="inline-flex items-center text-white bg-[#0067B8] px-8 py-2 text-sm font-semibold">
+              <button className="inline-flex items-center cursor-pointer text-white bg-[#0067B8] px-8 py-2 text-sm font-semibold transition-colors duration-200 self-start">
                 Explore
               </button>
             </div>

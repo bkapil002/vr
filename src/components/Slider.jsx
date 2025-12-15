@@ -105,7 +105,7 @@ const Slider = () => {
                 <p className="text-[11px] max-w-[400px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-normal text-black mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                   {slide.description}
                 </p>
-                <button className="bg-[#0067B8] text-[12px] cursor-pointer text-white font-semibold px-4 py-1.5 sm:px-6 sm:py-2 md:px-8 md:py-2.5 rounded-[3px] transition-colors duration-300">
+                <button className="bg-[#0067B8] text-sm font-semibold cursor-pointer text-white  px-4 py-1.5 sm:px-6 sm:py-2 md:px-7 md:py-2.5 rounded-[3px] transition-colors duration-300">
                   {slide.buttonText}
                 </button>
               </div>

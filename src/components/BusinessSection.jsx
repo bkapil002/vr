@@ -27,7 +27,7 @@ export default function BusinessSection() {
     {
       title: "NEET Participants",
       description:
-        "Assisting NEET participants nationwide with practical trade skills, rebuild confidence, and create sustainable career opportunities..",
+        "Assisting NEET's  to have practical trade skills, rebuild confidence, and create sustainable career opportunities.",
       image: corporat,
       alt: "Corporate training",
     },
