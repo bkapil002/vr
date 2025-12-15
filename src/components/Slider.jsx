@@ -129,7 +129,7 @@ const Slider = () => {
 
         {/* CONTENT BELOW IMAGE - Only visible on small/medium screens (≤1288px) */}
         <div className="[@media(min-width:1289px)]:hidden w-full   ">
-          <div className="max-w-[1400px] mx-auto bg-white p-6 px-4 sm:px-6 md:px-8 rounded-md shadow-md">
+          <div className="max-w-[1400px] mx-auto bg-[#FFFFFF] p-6 px-4 sm:px-6 md:px-8 rounded-md shadow-md">
             <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-black mb-3 sm:mb-4 leading-tight">
               {realSlides[currentSlide === 0 ? realSlides.length - 1 : currentSlide === totalSlides - 1 ? 0 : currentSlide - 1].title}
             </h1>

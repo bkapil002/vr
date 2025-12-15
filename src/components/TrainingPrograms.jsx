@@ -35,7 +35,7 @@ const TrainingPrograms = () => {
         {programs.map((p, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white border rounded-[3px] shadow-md border-gray-200 overflow-hidden"
+            className="flex flex-col bg-[#FFFFFF] border rounded-[3px] shadow-md border-gray-200 overflow-hidden"
           >
             {/* MEDIA */}
             <div className="h-48 overflow-hidden bg-black">

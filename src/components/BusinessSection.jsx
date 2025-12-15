@@ -10,13 +10,14 @@ import Twitter from "../image/Twitter.png";
 import Facebook from "../image/Facebook.png";
 export default function BusinessSection() {
   const cards = [
-    {
-      title: "Career Schools & Colleges",
+     {
+      title: "High School Training Centers",
       description:
-        "Upgrade campuses with cutting-edge VR tools that make trade learning safer, faster, and more effective.",
-      image: school,
-      alt: "Career Schools & Colleges",
+        "Strengthen national workforce capability with advanced VR/AR/MR training for high school seniors before they graduate.",
+      image: govttraining,
+      alt: "High School Training Centers",
     },
+   
     {
       title: "Workforce Development ",
       description:
@@ -31,13 +32,14 @@ export default function BusinessSection() {
       image: NEET,
       alt: "Corporate training",
     },
-    {
-      title: "High School Training Centers",
+     {
+      title: "Career Schools",
       description:
-        "Strengthen national workforce capability with advanced VR/AR/MR training for high school seniors before they graduate.",
-      image: govttraining,
-      alt: "High School Training Centers",
+        "Upgrade campuses with cutting-edge VR tools that make trade learning safer, faster, and more effective.",
+      image: school,
+      alt: "Career Schools",
     },
+   
   ];
 
   return (
@@ -49,7 +51,7 @@ export default function BusinessSection() {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="flex flex-col bg-white border rounded-[3px] shadow-md border-gray-200 overflow-hidden   "
+              className="flex flex-col bg-[#FFFFFF] border rounded-[3px] shadow-md border-gray-200 overflow-hidden   "
             >
               <div className="h-48 overflow-hidden">
                 <img
