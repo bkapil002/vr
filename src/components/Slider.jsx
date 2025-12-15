@@ -20,10 +20,10 @@ const Slider = () => {
       bgMobile: home,
     },
     {
-      title: "Transforming Trade Education with VR & Cognitive Learning",
+      title: "Build Real Skills in a Virtual World",
       description:
-        "Trade VR immerses learners in real job environments where they can build mental models, sharpen critical thinking, and accelerate hands-on skill development.",
-      buttonText: "Request a Demo",
+        "Train Like a Job, Not a Class - Learn Skills. Get Future Ready with Modern Training for Modern Trades",
+      buttonText: "How it Works",
       bgDesktop: home2,
       bgTablet: home2,
       bgMobile: home2,
@@ -103,7 +103,7 @@ const Slider = () => {
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-[33px] font-bold text-black mb-3 sm:mb-4 md:mb-6 leading-tight">
                   {slide.title}
                 </h1>
-                <p className="text-[11px] max-w-[400px] sm:text-[12px] md:text-[13px] lg:text-[13px] font-normal text-black mb-4 sm:mb-5 md:mb-6 leading-relaxed">
+                <p className="text-[11px] max-w-[400px] sm:text-[12px] md:text-[13px] lg:text-[14px]  font-normal  text-black mb-4 sm:mb-5 md:mb-6 leading-relaxed">
                   {slide.description}
                 </p>
                 <button className="bg-[#0067B8] text-sm font-semibold cursor-pointer text-white  px-4 py-1.5 sm:px-6 sm:py-2 md:px-7 md:py-2.5 rounded-[3px] transition-colors duration-300">
