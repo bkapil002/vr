@@ -18,11 +18,11 @@ export default function BusinessSection() {
       alt: "Career Schools & Colleges",
     },
     {
-      title: "Workforce Development Programs",
+      title: "Workforce Development ",
       description:
         "Empower your community with VR-powered skill training built for today's high-demand careers.",
       image: workforce,
-      alt: "Workforce Development Programs",
+      alt: "Workforce Development ",
     },
     {
       title: "NEET Participants",
