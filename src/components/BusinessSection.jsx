@@ -11,39 +11,39 @@ import Facebook from "../image/Facebook.png";
 export default function BusinessSection() {
   const cards = [
     {
-      title: "Schools & Colleges",
+      title: "Career Schools & Colleges",
       description:
         "Upgrade campuses with cutting-edge VR tools that make trade learning safer, faster, and more effective.",
       image: school,
-      alt: "Students in classroom",
+      alt: "Career Schools & Colleges",
     },
     {
       title: "Workforce Development Programs",
       description:
         "Empower your community with VR-powered skill training built for today's high-demand careers.",
       image: workforce,
-      alt: "Workforce training session",
+      alt: "Workforce Development Programs",
     },
     {
-      title: "Corporations & Apprenticeships",
+      title: "NEET Participants",
       description:
-        "Enhance corporate training and apprenticeships with immersive simulations that build real-world trade skills.",
+        "Assisting NEET participants nationwide with practical trade skills, rebuild confidence, and create sustainable career opportunities..",
       image: corporat,
       alt: "Corporate training",
     },
     {
-      title: "Government Training Centers",
+      title: "High School Training Centers",
       description:
-        "Strengthen national workforce capability with advanced VR training for Government and Military personnel.",
+        "Strengthen national workforce capability with advanced VR/AR/MR training for high school seniors before they graduate.",
       image: govttraining,
-      alt: "Government training facility",
+      alt: "High School Training Centers",
     },
   ];
 
   return (
     <div className=" mb-[90px] px-4 sm:px-6 lg:px-8">
-      <div className="max-w-[1400px]  mx-auto">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-5">For business</h2>
+      <div className="max-w-[1400px]  mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-semibold text-gray-900 mb-5">Human-Centered & Inclusive</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {cards.map((card, index) => (
