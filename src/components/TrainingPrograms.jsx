@@ -13,7 +13,7 @@ const programs = [
   },
   {
     title: "Sterile Processing",
-    desc: "Practice measuring, marking, cutting, and framing without wasting material.",
+    desc: "Train sterile room workflows and contamination control.",
     img: sterileprocessing,
   },
   {
@@ -22,8 +22,8 @@ const programs = [
     video: video2,
   },
   {
-    title: "Woodwork & Framing",
-    desc: "Train sterile room workflows and contamination control.",
+    title: " Manufacturing & Mechatronics",
+    desc: "Learn automation, robotics, sensors, and smart manufacturing basics",
     img: woodwork,
   },
 ];

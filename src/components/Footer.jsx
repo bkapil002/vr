@@ -23,7 +23,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
-                  VR Carpentry
+                  VR Mechatronics
                 </a>
               </li>
               <li>

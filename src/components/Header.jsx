@@ -40,7 +40,7 @@ export default function Header() {
               </a>
 
               <nav className="flex space-x-6 ml-4">
-                {["Welding", "HVAC", "Carpentry", "Healthcare", "Support"].map(
+                {["Welding", "HVAC", "Mechatronics", "Healthcare", "Support"].map(
                   (item) => (
                     <a
                       key={item}
@@ -123,7 +123,7 @@ export default function Header() {
       {mobileMenu && (
         <div className="lg:hidden absolute z-50 w-full  bg-gray-100 ">
           <nav className="flex pl-3 flex-col ">
-            {["Welding", "HVAC", "Carpentry", "Healthcare", "Support"].map(
+            {["Welding", "HVAC", "Mechatronics", "Healthcare", "Support"].map(
               (item, index) => (
                 <a
                   key={index}

@@ -16,7 +16,7 @@ export default function ProductsSection() {
     },
     {
       icon: carpenter,
-      title: "VR Carpentry",
+      title: "VR Mechatronics",
       link: "#"
     },
     {
