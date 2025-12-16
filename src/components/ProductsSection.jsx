@@ -37,7 +37,15 @@ export default function ProductsSection() {
               className="flex flex-col items-center text-center group"
             >
               <div className="text-gray-800 mb-4 transition-transform duration-200 group-hover:scale-110">
-                <img src={product.icon}  className="w-10 h-11"/>
+                <img
+        src={product.icon}
+        className={`${
+          product.title === "VR Mechatronics"
+            ? "w-11 h-11"
+            : "w-10 h-11"
+        }`}
+        alt={product.title}
+      />
               </div>
               <span className="text-[#0D349C] underline text-sm font-medium">
                 {product.title}
