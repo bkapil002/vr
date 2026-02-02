@@ -35,7 +35,7 @@ const Hero = () => {
                 We empower the world
               </h1>
               <p className="text-base text-gray-800 leading-relaxed">
-                Microsoft's mission is to empower every person and every organization on the planet to achieve more.
+                Teade VR's mission is to empower every person and every organization on the planet to achieve more.
               </p>
             </div>
           </div>
@@ -50,7 +50,7 @@ const Hero = () => {
               We empower the world
             </h1>
             <p className="text-sm sm:text-base text-gray-800 leading-relaxed">
-              Microsoft's mission is to empower every person and every organization on the planet to achieve more.
+              Teade VR's mission is to empower every person and every organization on the planet to achieve more.
             </p>
           </div>
         </div>

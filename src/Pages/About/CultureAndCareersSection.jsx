@@ -18,13 +18,13 @@ const CultureAndCareersSection = () => {
               Because impact matters
             </h3>
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4 max-w-lg">
-              At Microsoft you can live your purpose every day. With our scale and reach, your personal impact becomes part of a collective force for global progress.
+              At Teade VR you can live your purpose every day. With our scale and reach, your personal impact becomes part of a collective force for global progress.
             </p>
             <a
               href="#"
               className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm sm:text-base mb-8"
             >
-              Explore careers at Microsoft
+              Explore careers at Teade VR
               <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
@@ -34,7 +34,7 @@ const CultureAndCareersSection = () => {
             <div className="mt-6">
               <img
                 src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/About-man-with-illustrated-background-653x653?wid=653&hei=653"
-                alt="Microsoft employee with colorful background"
+                alt="Teade VR employee with colorful background"
                 className="w-full max-w-sm sm:max-w-md lg:max-w-lg h-auto"
               />
             </div>
@@ -57,7 +57,7 @@ const CultureAndCareersSection = () => {
                     href="#"
                     className="inline-flex items-center text-blue-600 hover:text-blue-700 font-medium text-sm sm:text-base"
                   >
-                    Learn about diversity at Microsoft
+                    Learn about diversity at Teade VR
                     <svg className="w-4 h-4 sm:w-5 sm:h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                     </svg>
