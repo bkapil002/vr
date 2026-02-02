@@ -4,6 +4,7 @@ import logo from "../image/logo.jpg";
 import signup from "../image/signup.png";
 import search from "../image/search.png";
 import crt from "../image/cart.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [openProducts, setOpenProducts] = useState(false);
@@ -101,20 +102,18 @@ export default function Header() {
             </button>
 
             {/* Cart - always visible on right (desktop & tablet & phone) */}
-            <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000]">
+            <Link to='/cart' className="relative p-2 rounded hover:bg-gray-50 text-[#000000]">
               <img src={crt} className="w-[17px]" alt="cart" />
-              <span className="absolute -top-1 -right-1 bg-red-600 text-white text-xs px-1.5 py-[1px] rounded-full">
-                3
-              </span>
-            </button>
+              
+            </Link>
 
             {/* Signup/User - always visible on right */}
-            <a
-              href="/signin"
+            <Link
+              to="/signin"
               className="inline-flex items-center gap-2 px-3 py-1.5 text-sm text-gray-600 rounded"
             >
               <img src={signup} className="w-[39px]" alt="signin" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

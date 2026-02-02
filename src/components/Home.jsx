@@ -1,9 +1,9 @@
 import React from 'react'
-import Slider from './Slider'
-import TrainingPrograms from './TrainingPrograms'
-import TradeVRSection from './TradeVRSection'
-import BusinessSection from './BusinessSection'
-import ProductsSection from './ProductsSection'
+import Slider from '../Pages/Slider'
+import TrainingPrograms from '../Pages/TrainingPrograms'
+import TradeVRSection from '../Pages/TradeVRSection'
+import BusinessSection from '../Pages/BusinessSection'
+import ProductsSection from '../Pages/ProductsSection'
 
 const Home = () => {
   return (
