@@ -11,6 +11,7 @@ import Cart from "./Pages/Cart";
 import About from "./Pages/About/About";
 import BlogArticles from "./Pages/Blog/BlogArticles";
 import ContactUs from "./Pages/Contactus/ContactUs";
+import Careers from "./Pages/Careers/Careers";
 
 function Layout() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function Layout() {
         <Route path="/about" element={<About/>}/>
         <Route path="/blog-articles" element={<BlogArticles/>}/>
         <Route path ='/contactus' element={<ContactUs/>}/>
+        <Route path="/careers" element={<Careers/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}

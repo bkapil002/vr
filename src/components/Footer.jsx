@@ -119,9 +119,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/careers" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   Careers
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
