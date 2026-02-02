@@ -7,6 +7,7 @@ import Signin from "./components/Signin";
 import Signup from "./components/Signup";
 import Recover from "./components/Recover";
 import Cart from "./Pages/Cart";
+import About from "./Pages/About/About";
 
 function Layout() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function Layout() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/recover" element={<Recover />} />
         <Route path="/cart" element={<Cart/>}/>
+        <Route path="/about" element={<About/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}

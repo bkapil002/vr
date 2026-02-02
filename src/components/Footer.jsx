@@ -1,5 +1,6 @@
 import React from 'react';
 import english from '../image/english.png'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -108,9 +109,9 @@ export default function Footer() {
             <h3 className="font-bold text-gray-900 text-base tracking-tight">Company</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/about" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
@@ -160,9 +161,9 @@ export default function Footer() {
             <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
               Terms of Use
             </a>
-            <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
+            {/* <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
               Trademarks
-            </a>
+            </a> */}
           </div>
             © 2025 TradeVR
           </div>
