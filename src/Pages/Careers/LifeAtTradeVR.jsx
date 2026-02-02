@@ -41,7 +41,7 @@ const LifeAtMicrosoft = () => {
         </h2>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 [@media(min-width:1366px)]:grid-cols-4 gap-6 md:gap-8">
           {cards.map((card) => (
             <div
               key={card.id}
