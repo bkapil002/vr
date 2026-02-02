@@ -10,6 +10,7 @@ import Recover from "./components/Recover";
 import Cart from "./Pages/Cart";
 import About from "./Pages/About/About";
 import BlogArticles from "./Pages/Blog/BlogArticles";
+import ContactUs from "./Pages/Contactus/ContactUs";
 
 function Layout() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function Layout() {
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/blog-articles" element={<BlogArticles/>}/>
+        <Route path ='/contactus' element={<ContactUs/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}

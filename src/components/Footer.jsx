@@ -129,9 +129,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/contactus" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
