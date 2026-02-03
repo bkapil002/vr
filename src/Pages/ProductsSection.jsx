@@ -2,27 +2,28 @@ import world from "../image/glass.png"
 import adapter from "../image/adapter.png"
 import carpenter from "../image/carpenter.png"
 import healthinsurance from "../image/health-insurance.png"
+import { Link } from "react-router-dom";
 export default function ProductsSection() {
   const products = [
     {
       icon: world,
       title: "VR Weld",
-      link: "#"
+      link: "/vrweld"
     },
     {
       icon: adapter,
       title: "VR HVAC",
-      link: "#"
+      link: ""
     },
     {
       icon: carpenter,
       title: "VR Mechatronics",
-      link: "#"
+      link: ""
     },
     {
       icon: healthinsurance,
       title: "VR Sterile  ",
-      link: "#"
+      link: ""
     }
   ];
 
@@ -31,9 +32,9 @@ export default function ProductsSection() {
       <div className="max-w-3xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4  gap-4">
           {products.map((product, index) => (
-            <a
+            <Link
               key={index}
-              href={product.link}
+              to={product.link}
               className="flex flex-col items-center text-center group"
             >
               <div className="text-gray-800 mb-4 transition-transform duration-200 group-hover:scale-110">
@@ -50,7 +51,7 @@ export default function ProductsSection() {
               <span className="text-[#0D349C] underline text-sm font-medium">
                 {product.title}
               </span>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

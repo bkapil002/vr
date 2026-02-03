@@ -13,9 +13,9 @@ export default function Footer() {
             <h3 className="font-bold text-gray-900 text-base tracking-tight">Products</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/vrweld" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   VR Weld
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
@@ -34,7 +34,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#" className="text-sm  text-[#000000]  hover:underline transition-colors duration-200">
-                  All VR Modules 
+                  All VR Modules
                 </a>
               </li>
             </ul>
@@ -105,36 +105,63 @@ export default function Footer() {
           </div>
 
           {/* Company */}
+          {/* Company */}
           <div className="space-y-4">
             <h3 className="font-bold text-gray-900 text-base tracking-tight">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link to="/about" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <a
+                  href="/about"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#000000] hover:underline transition-colors duration-200"
+                >
                   About Us
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/careers" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <a
+                  href="/careers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#000000] hover:underline transition-colors duration-200"
+                >
                   Our Mission
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/careers" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <a
+                  href="/careers"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#000000] hover:underline transition-colors duration-200"
+                >
                   Careers
-                </Link>
+                </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#000000] hover:underline transition-colors duration-200"
+                >
                   Partnerships
                 </a>
               </li>
               <li>
-                <Link to="/contactus" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <a
+                  href="/contactus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-[#000000] hover:underline transition-colors duration-200"
+                >
                   Contact Us
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
+
         </div>
 
         {/* Divider */}
@@ -144,27 +171,27 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-4">
           {/* Language Selector */}
           <div className="flex text-[#000000]  justify-center  text-xs lg:text-sm items-center gap-1">
-           
-              <img src={english} className='w-[21px]'/>
-              <span className="font-medium">English (US)</span>
+
+            <img src={english} className='w-[21px]' />
+            <span className="font-medium">English (US)</span>
           </div>
 
           {/* Links */}
-          
+
 
           {/* Copyright */}
           <div className="order-2 flex  gap-5 lg:order-3 text-sm text-[#000000] ">
             <div className="flex flex-wrap justify-center gap-4 lg:gap-6 text-xs lg:text-sm">
-            <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
-              Privacy
-            </a>
-            <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
-              Terms of Use
-            </a>
-            {/* <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
+              <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
+                Privacy
+              </a>
+              <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
+                Terms of Use
+              </a>
+              {/* <a href="#" className="text-[#000000]  hover:text-gray-900 hover:underline transition-colors duration-200">
               Trademarks
             </a> */}
-          </div>
+            </div>
             © 2025 TradeVR
           </div>
         </div>

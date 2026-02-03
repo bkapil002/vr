@@ -66,35 +66,7 @@ export default function Header() {
           {/* ---------------- RIGHT AREA ---------------- */}
           <div className="flex items-center space-x-3">
 
-            {/* Desktop only: All VR Products dropdown */}
-            <div className="relative hidden lg:block">
-              <button
-                onClick={() => setOpenProducts((v) => !v)}
-                className="inline-flex items-center gap-2 px-3 py-1.5 rounded text-sm text-[#000000] cursor-pointer hover:bg-gray-50"
-                aria-haspopup="true"
-                aria-expanded={openProducts}
-              >
-                <span>All VR Products</span>
-
-                <svg
-                  className={`w-4 h-4 transform transition-transform ${
-                    openProducts ? "rotate-180" : ""
-                  }`}
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M19 9l-7 7-7-7"
-                  />
-                </svg>
-              </button>
-
-             
-            </div>
+            
 
             {/* Desktop: Search icon on the right (visible on lg and up) */}
             <button className="relative p-2 rounded hover:bg-gray-50 text-[#000000] hidden lg:block" aria-label="Search desktop">

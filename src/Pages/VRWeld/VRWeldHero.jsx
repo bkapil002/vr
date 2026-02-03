@@ -4,15 +4,15 @@ const VRWeldHero = () => {
   const [videoLoaded, setVideoLoaded] = useState(false)
 
   return (
-    <div className="w-full mb-9 lg:mb-10">
+    <div className="w-full ">
       <div className="relative w-full">
-      
+
         <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px] relative bg-black">
           {/* Loading placeholder */}
           {!videoLoaded && (
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black animate-pulse" />
           )}
-          
+
           {/* Video wrapper with overflow hidden */}
           <div className="absolute inset-0 overflow-hidden">
             <iframe
@@ -20,7 +20,7 @@ const VRWeldHero = () => {
     w-[100vw] h-[100vh]
     -translate-x-1/2 -translate-y-1/2
     scale-[2.4] sm:scale-[1.6] lg:scale-[1.2]"
-             
+
               src="https://www.youtube.com/embed/T2RNM39INh4?autoplay=1&mute=1&loop=1&playlist=T2RNM39INh4&controls=0&rel=0&showinfo=0&modestbranding=1&playsinline=1&vq=hd1080"
               title="VR Welding Training Background Video"
               frameBorder="0"
@@ -31,7 +31,7 @@ const VRWeldHero = () => {
               aria-label="Background video showcasing VR welding training"
             />
           </div>
-          
+
           {/* Gradient overlay for better text readability */}
           <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent pointer-events-none" />
         </div>
@@ -59,8 +59,8 @@ const VRWeldHero = () => {
               <b>LEARN</b> Through doing. <b>GROW</b> with purpose. Belong to something <b>BIGGER.</b>
             </h1>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-             An immersive <strong>VR welding training</strong> journey where learners gain skills, confidence, and community — safely,freely, and fiercely.
-             </p>
+              An immersive <strong>VR welding training</strong> journey where learners gain skills, confidence, and community — safely,freely, and fiercely.
+            </p>
           </div>
         </div>
       </div>
