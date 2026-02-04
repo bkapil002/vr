@@ -62,14 +62,13 @@ const KeyBenefits = () => {
         <div className="relative mb-8 lg:hidden">
           <div className="aspect-[4/3] bg-gradient-to-br from-purple-200 via-purple-300 to-blue-400 rounded-lg overflow-hidden">
             <iframe
-  className="w-full h-full object-cover scale-[1.4]"
-  src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&rel=0&showinfo=0&playsinline=1"
+  className="w-full h-full object-cover scale-[1.4] pointer-events-none"
+  src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
   title="Key Benefits Background Video"
   frameBorder="0"
   allow="autoplay; encrypted-media"
-  allowFullScreen
+  loading="eager"
 />
-
           </div>
         </div>
 
@@ -159,13 +158,14 @@ const KeyBenefits = () => {
           <div className="relative hidden lg:block">
             <div className="aspect-[3/2] bg-gradient-to-br from-purple-200 via-purple-300 to-blue-400 rounded-lg overflow-hidden">
               <iframe
-  className="w-full h-full object-cover scale-[1.3]"
-  src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&rel=0&showinfo=0&playsinline=1"
+  className="w-full h-full object-cover scale-[1] pointer-events-none"
+  src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
   title="Key Benefits Background Video"
   frameBorder="0"
   allow="autoplay; encrypted-media"
-  allowFullScreen
+  loading="eager"
 />
+
 
             </div>
           </div>
