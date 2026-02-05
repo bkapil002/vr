@@ -54,13 +54,13 @@ const KeyBenefits = () => {
     <div className="w-full bg-white text-black py-9 lg:py-10">
       <div className="container max-w-[1400px] mx-auto px-6 xl:px-8">
         {/* Title */}
-        <h2 className="text-3xl lg:text-4xl font-semibold mb-8 lg:mb-10">
+        <h2 className="text-1xl lg:text-2xl xl:text-3xl font-semibold mb-8 lg:mb-10">
           What Powers the VRweld Experience
         </h2>
 
         {/* Mobile: Image Section (shows second on mobile) */}
         <div className="relative mb-8 lg:hidden">
-          <div className="aspect-[4/3] bg-gradient-to-br from-purple-200 via-purple-300 to-blue-400 rounded-lg overflow-hidden">
+          <div className="aspect-[4/3]  overflow-hidden">
             <iframe
   className="w-full h-full object-cover scale-[1.4] pointer-events-none"
   src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
@@ -80,15 +80,15 @@ const KeyBenefits = () => {
                <img 
   src={slides[currentSlide].image} 
   alt={slides[currentSlide].title}
-  className='w-40 h-40'
+  className='w-35 h-35'
 />
             
            
-            <h3 className="text-2xl lg:text-3xl font-semibold leading-tight">
+            <h3 className="text-1xl lg:text-2xl xl:text-3xl font-semibold leading-tight">
               {slides[currentSlide].title}
             </h3>
             
-            <p className="text-base pl-5 lg:text-lg text-gray-80 leading-relaxed">
+            <p className=" pl-5 lg:text-[1rem] text-gray-80 leading-relaxed">
               {slides[currentSlide].description}
             </p>
 
@@ -133,7 +133,7 @@ const KeyBenefits = () => {
               <div className="flex gap-2">
                 <button
                   onClick={goToPrevious}
-                  className="w-12 h-12 rounded-full bg-gray-700 text-white flex items-center justify-center hover:bg-gray-600 transition-colors"
+                  className="w-12 h-12 rounded-full  text-[#005a9e] flex items-center justify-center  transition-colors"
                   aria-label="Previous slide"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,7 +143,7 @@ const KeyBenefits = () => {
 
                 <button
                   onClick={goToNext}
-                  className="w-12 h-12 rounded-full bg-gray-700 text-white flex items-center justify-center hover:bg-gray-600 transition-colors"
+                  className="w-12 h-12 rounded-full text-[#005a9e]  flex items-center justify-center  transition-colors"
                   aria-label="Next slide"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -156,7 +156,7 @@ const KeyBenefits = () => {
 
           {/* Desktop: Right Side - Static Image (hidden on mobile) */}
           <div className="relative hidden lg:block">
-            <div className="aspect-[3/2] bg-gradient-to-br from-purple-200 via-purple-300 to-blue-400 rounded-lg overflow-hidden">
+            <div className="h-85 bg-gradient-to-br  overflow-hidden">
               <iframe
   className="w-full h-full object-cover scale-[1] pointer-events-none"
   src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"

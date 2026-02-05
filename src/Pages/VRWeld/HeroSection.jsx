@@ -2,7 +2,7 @@ import React from 'react'
 
 const HeroSection = () => {
     return (
-        <div className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] overflow-hidden ">
+        <div className="relative w-full h-[280px] md:h-[380px] lg:h-[480px] overflow-hidden ">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img
@@ -19,7 +19,7 @@ const HeroSection = () => {
                 <div className="max-w-4xl mx-auto text-center text-white space-y-6 md:space-y-8">
 
                     {/* Main Heading */}
-                    <h1 className="text-1xl md:text-4xl lg:text-3xl xl:text-4xl font-bold leading-tight">
+                    <h1 className="text-1xl lg:text-2xl xl:text-3xl  font-bold leading-tight">
                         It's not about mastering a tool.
                         <br />
                         It's about becoming kind of person who builds with
@@ -28,7 +28,7 @@ const HeroSection = () => {
                     </h1>
 
                     {/* Subheading / Description */}
-                    <p className="text-base md:text-lg lg:text-xl italic leading-relaxed max-w-3xl mx-auto">
+                    <p className="text-[1rem] italic leading-relaxed max-w-3xl mx-auto">
                         Inspired by Gandhi's vision of <strong>vocational learning</strong>, <strong>VRweld</strong> empowers learners to contribute to society, not just succeed in it — through <strong>immersive, skill-based welding education</strong>.
                     </p>
                 </div>

@@ -59,16 +59,16 @@ const ShapeLearners = () => {
                                 <div
                                     key={index}
                                     className={`grid lg:grid-cols-2 gap-8 lg:gap-12 items-center transition-all duration-700 ease-in-out ${index === currentSlide
-                                            ? 'opacity-100 translate-x-0 relative'
-                                            : index < currentSlide
-                                                ? 'opacity-0 -translate-x-full absolute inset-0 pointer-events-none'
-                                                : 'opacity-0 translate-x-full absolute inset-0 pointer-events-none'
+                                        ? 'opacity-100 translate-x-0 relative'
+                                        : index < currentSlide
+                                            ? 'opacity-0 -translate-x-full absolute inset-0 pointer-events-none'
+                                            : 'opacity-0 translate-x-full absolute inset-0 pointer-events-none'
                                         }`}
                                 >
 
                                     {/* Left Side - Image */}
                                     <div className="relative order-2 lg:order-1">
-                                        <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-lg">
+                                        <div className="h-85 overflow-hidden ">
                                             <img
                                                 src={story.image}
                                                 alt="VRweld training"
@@ -79,39 +79,19 @@ const ShapeLearners = () => {
 
                                     {/* Right Side - Text Content */}
                                     <div className="space-y-6 order-1 lg:order-2">
-                                        <h2 className="text-3xl lg:text-4xl font-semibold mb-6 lg:mb-6">
+                                        <h2 className="text-1xl lg:text-2xl xl:text-3xl font-semibold mb-6 lg:mb-6">
                                             {story.header}
                                         </h2>
 
                                         {/* Quote */}
-                                        <blockquote className="text-lg lg:text-xl leading-relaxed mb-6 text-gray-700">
+                                        <blockquote className="text-lg lg:text-[1rem] leading-relaxed mb-6 text-gray-700">
                                             {story.quote}
                                         </blockquote>
+                                        <p className="text-base lg:text-[1rem]  italic text-gray-700 leading-relaxed">
+                                            “We don’t just shape learners — We grow future creators, collaborators, and citizens."
+                                        </p>
 
-                                        {/* Attribution */}
-                                        {story.name && (
-                                            <div className="space-y-1">
-                                                <p className="font-semibold text-base lg:text-lg">
-                                                    {story.name}
-                                                </p>
-                                                <p className="text-gray-400 text-sm lg:text-base">
-                                                    {story.title}
-                                                </p>
-                                            </div>
-                                        )}
 
-                                        {/* Read More Link */}
-                                        {story.link && (
-                                            <a
-                                                href={story.link}
-                                                className="inline-flex items-center gap-2 text-[#005a9e] hover:text-[#005a9e] transition-colors font-semibold mt-4"
-                                            >
-                                                Learn more
-                                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                                </svg>
-                                            </a>
-                                        )}
                                     </div>
                                 </div>
                             ))}
@@ -150,8 +130,8 @@ const ShapeLearners = () => {
                                 key={index}
                                 onClick={() => goToSlide(index)}
                                 className={`transition-all duration-300 rounded-full ${index === currentSlide
-                                        ? 'w-8 h-3 bg-[#005a9e]'
-                                        : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
+                                    ? 'w-3 h-3 bg-[#005a9e]'
+                                    : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
                                     }`}
                                 aria-label={`Go to story ${index + 1}`}
                             />
@@ -180,11 +160,7 @@ const ShapeLearners = () => {
                             </svg>
                         </button>
                     </div>
-                    <div className=' flex justify-center w-full items-center mt-5 mb-6'>
-                        <p className="text-base lg:text-lg italic text-gray-700 leading-relaxed">
-                            “We don’t just shape learners — We grow future creators, collaborators, and citizens."
-                        </p>
-                    </div>
+
 
                 </div>
             </div>
