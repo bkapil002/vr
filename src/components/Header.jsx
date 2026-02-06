@@ -4,11 +4,19 @@ import logo from "../image/logo.jpg";
 import signup from "../image/signup.png";
 import search from "../image/search.png";
 import crt from "../image/cart.png";
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 
 export default function Header() {
   const [openProducts, setOpenProducts] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
+
+  const menuItems = [
+  { name: "Welding", path: "/vrweld" },
+  { name: "HVAC", path: "/vrhvac" },
+  { name: "Mechatronics", path: "/vrmechatronics" },
+  { name: "Healthcare", path: "/vrsterile" },
+  { name: "Support", path: "" },
+];
 
   return (
     <header className="bg-white">
@@ -41,16 +49,15 @@ export default function Header() {
               </a>
 
               <nav className="flex space-x-6 ml-4">
-                {["Welding", "HVAC", "Mechatronics", "Healthcare", "Support"].map(
-                  (item) => (
-                    <a
-                      key={item}
-                      className="text-sm cursor-pointer text-[#000000]"
-                    >
-                      {item}
-                    </a>
-                  )
-                )}
+                {menuItems.map((item) => (
+                  <Link
+                    key={item.name}
+                    to={item.path}
+                    className="text-sm font-medium text-gray-800 hover:text-gray-700"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
               </nav>
             </div>
           </div>
