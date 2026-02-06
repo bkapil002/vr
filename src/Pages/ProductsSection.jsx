@@ -13,17 +13,17 @@ export default function ProductsSection() {
     {
       icon: adapter,
       title: "VR HVAC",
-      link: ""
+      link: "/vrhvac"
     },
     {
       icon: carpenter,
       title: "VR Mechatronics",
-      link: ""
+      link: "/vrmechatronics"
     },
     {
       icon: healthinsurance,
-      title: "VR Sterile  ",
-      link: ""
+      title: "VR Sterile",
+      link: "/vrsterile"
     }
   ];
 

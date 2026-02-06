@@ -18,24 +18,24 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/vrhvac" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   VR HVAC
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/vrmechatronics" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   VR Mechatronics
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/vrsterile" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   VR Sterile
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-sm  text-[#000000]  hover:underline transition-colors duration-200">
+                <Link href="#" className="text-sm  text-[#000000]  hover:underline transition-colors duration-200">
                   All VR Modules
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

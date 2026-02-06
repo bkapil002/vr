@@ -13,6 +13,9 @@ import BlogArticles from "./Pages/Blog/BlogArticles";
 import ContactUs from "./Pages/Contactus/ContactUs";
 import Careers from "./Pages/Careers/Careers";
 import VRWeld from "./Pages/VRWeld/VRWeld";
+import VRSterile from "./Pages/VRSterile/VRSterile";
+import VRHVAC from "./Pages/VRHVAC/VRHVAC";
+import VRMechatronics from "./Pages/VRMechatronics/VRMechatronics";
 
 function Layout() {
   const location = useLocation();
@@ -37,6 +40,9 @@ function Layout() {
         <Route path ='/contactus' element={<ContactUs/>}/>
         <Route path="/careers" element={<Careers/>}/>
         <Route path="/vrweld" element={<VRWeld/>}/>
+        <Route path="/vrsterile" element={<VRSterile/>}/>
+        <Route path="/vrhvac" element={<VRHVAC/>}/>
+        <Route path ='/vrmechatronics' element={<VRMechatronics/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}
