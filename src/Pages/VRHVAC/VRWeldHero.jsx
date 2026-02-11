@@ -42,10 +42,10 @@ const VRWeldHero = () => {
           <div className="container max-w-[1400px] mx-auto px-6 xl:px-8 h-full flex items-center">
             <div className="max-w-[500px]  rounded-lg pointer-events-auto">
               <h1 className="text-[2rem] text-white font-semibold leading-tight mb-5 drop-shadow-lg">
-                <b>LEARN</b> Through doing. <b>GROW</b> with purpose. Belong to something <b>BIGGER.</b>
+               Learn HVAC Systems the Way They Work in the Real World
               </h1>
               <p className="text-base text-white leading-relaxed drop-shadow-md">
-                An immersive <strong>VR welding training</strong> journey where learners gain skills, confidence, and community safely,freely, and fiercely.
+                Teach installation, airflow, and troubleshooting in immersive virtual environments — without equipment limits or safety risks.
               </p>
             </div>
           </div>

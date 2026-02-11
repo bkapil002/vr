@@ -6,16 +6,16 @@ const Mindsets = () => {
             <div className="w-full bg-white  text-black py-9 lg:py-10">
                 <div className="container max-w-[1400px] mx-auto px-6 xl:px-8">
                     {/* Content Section */}
-                    <div className="text-center mb-8 lg:mb-12">
+                    <div className="text-center mb-8 lg:mb-8">
                         {/* Title */}
                         <h2 className="text-1xl lg:text-2xl xl:text-3xl  max-w-4xl mx-auto font-semibold mb-6 lg:mb-8">
-                            Empowering Mindsets. Transforming Futures. Through Skill-Based VR Welding Training
+                            A Virtual Classroom Built for Hands-On HVAC Learning
                         </h2>
 
                         {/* Description */}
-                        <p className=" lg:text-[1rem] text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-                            VRweld isn’t just about learning — it’s about becoming. Through virtual reality vocational training, we empower learners to act with intention, think critically, and contribute meaningfully to the world around them.
-                            <sup className="text-sm">1</sup>
+                        <p className=" lg:text-[1rem] max-w-xl text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
+                           VRHVAC places students inside fully interactive HVAC environments where they can explore, assemble, test, and troubleshoot systems in real time.
+                            <br/>Learners don’t just see systems — <br/>they work inside them.
                         </p>
 
 

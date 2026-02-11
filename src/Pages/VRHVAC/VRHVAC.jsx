@@ -12,8 +12,9 @@ const VRHVAC = () => {
     <div>
         <VRWeldHero/>
        <VRweldSafety/>
+       <Mindsets/>
         <KeyBenefits/>
-         <Mindsets/>
+         
         <ShapeLearners/>
         <HeroSection/>
     </div>

@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react'
-
+import Agency from "../../image/Agency-Autonomy-1.png"
+import Community from "../../image/Community-Belonging-1.png"
+import Innovation from "../../image/Innovation-Stability-1.png"
+import Resilience from "../../image/Resilience-Reinvention-1.png"
 const KeyBenefits = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isPaused, setIsPaused] = useState(false)
@@ -8,22 +11,22 @@ const KeyBenefits = () => {
     {
       title: "Agency & Autonomy",
       description: "Own your path. Thrive in skilled trades through VR training.",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Agency-Autonomy-1.png"
+      image: {Agency}
     },
     {
       title: "Community & Belonging",
       description: "Train together in immersive VR. Share progress & Grow.",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Community-Belonging-1.png"
+      image: {Community}
     },
     {
       title: "Innovation & Stability",
       description: "Explore safely. Build welding skills with virtual tools and steady growth",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Innovation-Stability-1.png"
+      image: {Innovation}
     },
     {
       title: "Resilience & Reinvention",
       description: "Fail fast. Evolve through hands-on VR welding practice.",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Resilience-Reinvention-1.png"
+      image: {Resilience}
     }
   ]
 

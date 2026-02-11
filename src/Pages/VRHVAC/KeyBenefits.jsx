@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react'
+import Agency from "../../image/Agency-Autonomy-1.png"
+import Community from "../../image/Community-Belonging-1.png"
+import Innovation from "../../image/Innovation-Stability-1.png"
+import Resilience from "../../image/Resilience-Reinvention-1.png"
 
 const KeyBenefits = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -6,28 +10,35 @@ const KeyBenefits = () => {
 
   const slides = [
     {
-      title: "Agency & Autonomy",
-      description: "Own your path. Thrive in skilled trades through VR training.",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Agency-Autonomy-1.png"
+      title: "See the Whole System",
+      Subtitle: "Understand how HVAC systems work together — not just piece by piece.",
+      description: "Step inside complete HVAC environments to visualize airflow, pressure, and system behavior in real time.",
+      description2: "Students learn why systems work — not just how to assemble them.",
+      image: Agency
     },
     {
-      title: "Community & Belonging",
-      description: "Train together in immersive VR. Share progress & Grow.",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Community-Belonging-1.png"
+      title: "Learn Without Fear",
+      Subtitle: "Make mistakes safely. Learn faster.",
+      description: "Students can test ideas, troubleshoot faults, and try again without damaging equipment or risking safety.",
+      description2: "Every mistake becomes a lesson — not a setback.",
+      image: Community
     },
     {
-      title: "Innovation & Stability",
-      description: "Explore safely. Build welding skills with virtual tools and steady growth",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Innovation-Stability-1.png"
+      title: "Build Skill Through Doing",
+      Subtitle: "Practice turns into confidence.",
+      description: "Learners interact directly with HVAC components and workflows using their hands — reinforcing muscle memory, spatial understanding, and technical confidence.",
+      description2: "",
+      image: Innovation
     },
     {
-      title: "Resilience & Reinvention",
-      description: "Fail fast. Evolve through hands-on VR welding practice.",
-      image: "https://vrwelding.org/wp-content/uploads/2025/06/Resilience-Reinvention-1.png"
+      title: "Teach Together in One Virtual Space",
+      Subtitle: "One classroom. One system. Many learners.",
+      description: "Instructors guide students live using multiplayer classrooms, demonstrations, and real-time controls — making complex concepts easier to understand and repeat.",
+      description2: "",
+      image: Resilience
     }
   ]
 
-  // Auto-slide effect
   useEffect(() => {
     if (!isPaused) {
       const interval = setInterval(() => {
@@ -55,20 +66,20 @@ const KeyBenefits = () => {
       <div className="container max-w-[1400px] mx-auto px-6 xl:px-8">
         {/* Title */}
         <h2 className="text-1xl lg:text-2xl xl:text-3xl font-semibold mb-8 lg:mb-10">
-          What Powers the VRweld Experience
+          What Powers the VRHVAC Experience
         </h2>
 
         {/* Mobile: Image Section (shows second on mobile) */}
         <div className="relative mb-8 lg:hidden">
           <div className="aspect-[4/3]  overflow-hidden">
             <iframe
-  className="w-full h-full object-cover scale-[1.4] pointer-events-none"
-  src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
-  title="Key Benefits Background Video"
-  frameBorder="0"
-  allow="autoplay; encrypted-media"
-  loading="eager"
-/>
+              className="w-full h-full object-cover scale-[1.4] pointer-events-none"
+              src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
+              title="Key Benefits Background Video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              loading="eager"
+            />
           </div>
         </div>
 
@@ -76,20 +87,26 @@ const KeyBenefits = () => {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Side - Text Content */}
           <div className="space-y-4 ">
-          
-               <img 
-  src={slides[currentSlide].image} 
-  alt={slides[currentSlide].title}
-  className='w-35 h-35'
-/>
-            
-           
+
+            <img
+              src={slides[currentSlide].image}
+              alt={slides[currentSlide].title}
+              className='w-35 h-35'
+            />
+
+
             <h3 className="text-1xl lg:text-2xl xl:text-3xl font-semibold leading-tight">
               {slides[currentSlide].title}
             </h3>
-            
+            <p className=" pl-5 font-medium lg:text-[1rem] text-gray-80 leading-relaxed">
+              {slides[currentSlide].Subtitle}
+            </p>
+
             <p className=" pl-5 lg:text-[1rem] text-gray-80 leading-relaxed">
               {slides[currentSlide].description}
+            </p>
+            <p className=" pl-5 lg:text-[1rem] text-gray-80 leading-relaxed">
+              {slides[currentSlide].description2}
             </p>
 
             {/* Progress Bars */}
@@ -101,10 +118,9 @@ const KeyBenefits = () => {
                   className="relative h-1 flex-1 bg-gray-600 rounded-full overflow-hidden cursor-pointer hover:bg-gray-500 transition-colors"
                   aria-label={`Go to slide ${index + 1}`}
                 >
-                  <div 
-                    className={`absolute inset-0 bg-[#005a9e] rounded-full transition-all duration-300 ${
-                      index === currentSlide ? 'w-full' : 'w-0'
-                    }`}
+                  <div
+                    className={`absolute inset-0 bg-[#005a9e] rounded-full transition-all duration-300 ${index === currentSlide ? 'w-full' : 'w-0'
+                      }`}
                   />
                 </button>
               ))}
@@ -158,13 +174,13 @@ const KeyBenefits = () => {
           <div className="relative hidden lg:block">
             <div className="h-85 bg-gradient-to-br  overflow-hidden">
               <iframe
-  className="w-full h-full object-cover scale-[1] pointer-events-none"
-  src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
-  title="Key Benefits Background Video"
-  frameBorder="0"
-  allow="autoplay; encrypted-media"
-  loading="eager"
-/>
+                className="w-full h-full object-cover scale-[1] pointer-events-none"
+                src="https://www.youtube.com/embed/tm5GW2okL2E?autoplay=1&mute=1&loop=1&playlist=tm5GW2okL2E&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
+                title="Key Benefits Background Video"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                loading="eager"
+              />
 
 
             </div>
