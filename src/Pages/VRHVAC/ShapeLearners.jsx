@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import gif from "../../image/vrweld1.gif"
 
 const ShapeLearners = () => {
     const [currentSlide, setCurrentSlide] = useState(0)
@@ -7,7 +8,7 @@ const ShapeLearners = () => {
 
     const stories = [
         {
-            image: "https://vrwelding.org/wp-content/uploads/2025/06/vrweld1.gif",
+            image: gif,
             header: "Built for Instructional Control and Program Scale.",
             points: [
                 "Instructor role management",
