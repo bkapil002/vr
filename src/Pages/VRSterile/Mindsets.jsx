@@ -9,15 +9,13 @@ const Mindsets = () => {
                     <div className="text-center mb-8 lg:mb-12">
                         {/* Title */}
                         <h2 className="text-1xl lg:text-2xl xl:text-3xl  max-w-4xl mx-auto font-semibold mb-6 lg:mb-8">
-                            Empowering Mindsets. Transforming Futures. Through Skill-Based VR Welding Training
+                            A Safe Environment for Learning Critical Healthcare Workflows
                         </h2>
 
                         {/* Description */}
                         <p className=" lg:text-[1rem] text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-                            VRweld isn’t just about learning — it’s about becoming. Through virtual reality vocational training, we empower learners to act with intention, think critically, and contribute meaningfully to the world around them.
-                            <sup className="text-sm">1</sup>
+                            VR Healthcare places learners inside realistic sterile processing environments where they can practice essential procedures without risk.<br/>Learners don’t just observe protocols — they perform them, step by step, until accuracy becomes habit.
                         </p>
-
 
                     </div>
 

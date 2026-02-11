@@ -9,15 +9,14 @@ const Mindsets = () => {
                     <div className="text-center mb-8 lg:mb-12">
                         {/* Title */}
                         <h2 className="text-1xl lg:text-2xl xl:text-3xl  max-w-4xl mx-auto font-semibold mb-6 lg:mb-8">
-                            Empowering Mindsets. Transforming Futures. Through Skill-Based VR Welding Training
+                            A Virtual Environment for Learning Smart Systems
                         </h2>
 
                         {/* Description */}
                         <p className=" lg:text-[1rem] text-gray-700 max-w-3xl mx-auto mb-8 leading-relaxed">
-                            VRweld isn’t just about learning — it’s about becoming. Through virtual reality vocational training, we empower learners to act with intention, think critically, and contribute meaningfully to the world around them.
-                            <sup className="text-sm">1</sup>
+                            VR Mechatronics places students inside interactive automation environments where they can explore, assemble, and test systems safely.<br />Learners don’t just study automation —
+                            they experience how systems respond, adapt, and communicate.
                         </p>
-
 
                     </div>
 

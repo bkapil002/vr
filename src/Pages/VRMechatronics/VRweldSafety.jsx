@@ -1,18 +1,18 @@
 import React from 'react'
+import vrglass from '../../image/vrglass.png'
 
 const VRweldSafety = () => {
   return (
-    <div className="w-full bg-white py-9 lg:py-10 ">
+    <div className="w-full bg-white py-10 mt-0 md:mt-8">
       <div className="container max-w-[1400px] mx-auto px-6 xl:px-8">
-        
-        {/* Content Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
-          
+
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center">
+
           {/* Left Side - Image */}
           <div className="relative order-2 lg:order-1">
-            <div className="aspect-[2/1] bg-gradient-to-br overflow-hidden">
+            <div className="aspect-[2/1] overflow-hidden rounded-lg">
               <img
-                src="https://vrwelding.org/wp-content/uploads/2025/05/home-cover-transparent-1.png"
+                src={vrglass}
                 alt="VR welding safety training"
                 className="w-full h-full object-cover"
               />
@@ -20,26 +20,34 @@ const VRweldSafety = () => {
           </div>
 
           {/* Right Side - Text Content */}
-          <div className="space-y-6 order-1 lg:order-2">
-            <h2 className="text-1xl lg:text-2xl xl:text-3xl font-semibold leading-tight text-black">
-              VRweld is Not just a Product.But a Mindset-Driven Virtual Welding Education.
+          <div className="space-y-3 order-1 lg:order-2">
+            <h2 className="text-xl lg:text-2xl xl:text-3xl font-semibold leading-tight text-black">
+             Mechatronics Training Is Advanced — and Resource Intensive
             </h2>
 
-            <p className="text-base lg:text-[1rem] text-gray-700 leading-relaxed">
-              <b>VRweld</b> isn’t just about learning — it’s about becoming. We empower learners through<b>virtual reality education</b> to act with intention, think critically, and contribute meaningfully to the world around them.
+            <p className="text-base text-gray-700 leading-relaxed">
+              Mechatronics education requires learners to understand how mechanical systems, electronics, and software work together.
             </p>
 
-            {/* CTA Button */}
-            <div className="pt-2">
-              
-              
-                <p className="text-base lg:text-[1rem] italic text-gray-700 leading-relaxed">
-               “Nurturing & transforming communities through purpose & action."
+            <p className="text-base text-gray-700 leading-relaxed">
+              Traditional training often struggles with:
             </p>
 
-              
-            </div>
+            <ul className="list-disc pl-6 space-y-2 text-base text-gray-700">
+              <li>Expensive and limited lab equipment</li>
+              <li>Difficulty visualizing system interactions</li>
+              <li>Steep learning curves for beginners</li>
+              <li>One instructor supporting many learners at different skill levels</li>
+            </ul>
+            <p className="text-base text-gray-700 leading-relaxed">
+              As a result, students often learn components in isolation without fully understanding system integration.
+            </p>
+            <p className="text-base italic text-gray-700 leading-relaxed pt-2">
+              Understanding automation requires seeing systems in motion.
+            </p>
+
           </div>
+
         </div>
       </div>
     </div>

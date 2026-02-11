@@ -20,14 +20,14 @@ const VRweldSafety = () => {
           </div>
 
           {/* Right Side - Text Content */}
-          <div className="space-y-5 order-1 lg:order-2">
+          <div className="space-y-3 order-1 lg:order-2">
             <h2 className="text-xl lg:text-2xl xl:text-3xl font-semibold leading-tight text-black">
-              HVAC Training Is Complex and Hard to Scale
+             HVAC Training Is Complex and Hard to Scale
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed">
-              <strong>HVAC</strong> education requires students to understand systems, not just components.
-            </p>
+             HVAC education requires students to understand systems, not just components.
+             </p>
 
             <p className="text-base text-gray-700 leading-relaxed">
               Traditional training often struggles with:
@@ -39,10 +39,13 @@ const VRweldSafety = () => {
               <li>Difficulty visualizing airflow and system behavior</li>
               <li>One instructor managing many learners</li>
             </ul>
-
-            <p className="text-base italic text-gray-700 leading-relaxed pt-2">
-              As a result, students memorize procedures without fully understanding how systems work together.
+            <p className="text-base text-gray-700 leading-relaxed">
+             As a result, students memorize procedures without fully understanding how systems work together.
             </p>
+            <p className="text-base italic text-gray-700 leading-relaxed pt-2">
+              Understanding systems requires more than diagrams.
+            </p>
+
           </div>
 
         </div>

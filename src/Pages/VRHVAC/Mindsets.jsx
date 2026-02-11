@@ -6,7 +6,7 @@ const Mindsets = () => {
             <div className="w-full bg-white  text-black py-9 lg:py-10">
                 <div className="container max-w-[1400px] mx-auto px-6 xl:px-8">
                     {/* Content Section */}
-                    <div className="text-center mb-8 lg:mb-8">
+                    <div className="text-center mb-8 lg:mb-12">
                         {/* Title */}
                         <h2 className="text-1xl lg:text-2xl xl:text-3xl  max-w-4xl mx-auto font-semibold mb-6 lg:mb-8">
                             A Virtual Classroom Built for Hands-On HVAC Learning

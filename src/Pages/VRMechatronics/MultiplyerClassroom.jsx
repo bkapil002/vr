@@ -8,31 +8,30 @@ const MultiplyerClassroom = () => {
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center">
 
-          
+
 
           {/* Right Side - Text Content */}
           <div className="space-y-5 order-2 lg:order-1">
             <h2 className="text-xl lg:text-2xl xl:text-3xl font-semibold leading-tight text-black">
-              Teach Together. Learn Together. In VR.
+              Explore, Test, and Understand Complex Systems
             </h2>
 
             <p className="text-base text-gray-700 leading-relaxed">
-              VRHVAC supports multiplayer classrooms, allowing instructors and students to share the same virtual space.
-            </p>
+              VR Mechatronics allows learners to interact directly with smart manufacturing and automation concepts through guided virtual scenarios.             </p>
 
             <ul className="list-disc pl-6 space-y-2 text-base text-gray-700">
-              <li>Teacher-led sessions with live demonstrations</li>
-              <li>Real-time avatar and hand tracking</li>
-              <li>Voice communication with instructor controls</li>
-              <li>Smartboard and AR-style teaching tools</li>
-              <li>Classroom management features (mute, permissions, session control)</li>
+              <li>Interactive mechanical and electronic components</li>
+              <li>Sensor behavior and system response visualization</li>
+              <li>Step-by-step automation workflows</li>
+              <li>Problem-solving through experimentation</li>
+
             </ul>
 
             <p className="text-base italic text-gray-700 leading-relaxed pt-2">
-             One instructor. One virtual system. Many engaged learners.
+              Learning happens through exploration — not memorization.
             </p>
           </div>
-           {/* Left Side - Image */}
+          {/* Left Side - Image */}
           <div className="relative order-1 lg:order-2">
             <div className="aspect-[2/1] overflow-hidden rounded-lg">
               <img

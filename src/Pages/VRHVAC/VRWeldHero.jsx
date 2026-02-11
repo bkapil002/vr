@@ -42,11 +42,16 @@ const VRWeldHero = () => {
           <div className="container max-w-[1400px] mx-auto px-6 xl:px-8 h-full flex items-center">
             <div className="max-w-[500px]  rounded-lg pointer-events-auto">
               <h1 className="text-[2rem] text-white font-semibold leading-tight mb-5 drop-shadow-lg">
-               Learn HVAC Systems the Way They Work in the Real World
+                Learn HVAC Systems the Way They Work in the Real World
               </h1>
               <p className="text-base text-white leading-relaxed drop-shadow-md">
                 Teach installation, airflow, and troubleshooting in immersive virtual environments — without equipment limits or safety risks.
               </p>
+              <div className="pt-3">
+                <button className="bg-[#005a9e] hover:bg-[#004a7e] text-white font-semibold px-8 py-2.5 rounded-md transition-all duration-300">
+                  Request a Demo
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -57,11 +62,17 @@ const VRWeldHero = () => {
         <div className="container mx-auto px-4 sm:px-6">
           <div className="bg-white shadow-lg  p-6 sm:p-10">
             <h1 className="text-[1.40rem] sm:text-[2rem] font-semibold leading-tight mb-4 text-gray-900">
-              <b>LEARN</b> Through doing. <b>GROW</b> with purpose. Belong to something <b>BIGGER.</b>
+                Learn HVAC Systems the Way They Work in the Real World
             </h1>
             <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
-              An immersive <strong>VR welding training</strong> journey where learners gain skills, confidence, and community — safely,freely, and fiercely.
+                Teach installation, airflow, and troubleshooting in immersive virtual environments — without equipment limits or safety risks.
             </p>
+
+            <div className="pt-3">
+              <button className="bg-[#005a9e] hover:bg-[#004a7e]  text-white font-semibold px-5 py-2 rounded-md transition-all duration-300">
+                Request a Demo
+              </button>
+            </div>
           </div>
         </div>
       </div>

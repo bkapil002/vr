@@ -19,17 +19,25 @@ const HeroSection = () => {
                 <div className="max-w-4xl mx-auto text-center text-white space-y-6 md:space-y-8">
 
                     {/* Main Heading */}
-                    <h1 className="text-1xl lg:text-2xl xl:text-3xl  font-bold leading-tight">
-                        It's not about mastering a tool.
-                        <br />
-                        It's about becoming kind of person who builds with
-                        <br />
-                        meaningful purpose.
+                    <h1 className="text-1xl lg:text-2xl xl:text-3xl font-bold leading-tight">
+                       See VR Mechatronics in Action
                     </h1>
 
                     {/* Subheading / Description */}
                     <p className="text-[1rem] italic leading-relaxed max-w-3xl mx-auto">
-                        Inspired by Gandhi's vision of <strong>vocational learning</strong>, <strong>VRweld</strong> empowers learners to contribute to society, not just succeed in it — through <strong>immersive, skill-based welding education</strong>.
+                       Experience how immersive learning makes automation and smart systems easier to understand — and easier to teach.
+                    </p>
+
+                    {/* CTA Button */}
+                    <div className="pt-2">
+                        <button className="bg-[#005a9e] hover:bg-[#004a7e] text-white font-semibold px-8 py-3 rounded-md transition-all duration-300">
+                            Request a Demo
+                        </button>
+                    </div>
+
+                    {/* Closing Line */}
+                    <p className="text-base italic leading-relaxed pt-2">
+                        Understand systems. Build confidence. Prepare for the future.
                     </p>
                 </div>
             </div>
