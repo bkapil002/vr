@@ -36,6 +36,13 @@ const KeyBenefits = () => {
       description: "Instructors guide students live using multiplayer classrooms, demonstrations, and real-time controls — making complex concepts easier to understand and repeat.",
       description2: "",
       image: Resilience
+    },
+    {
+      title: "Prepare for the Job Site",
+      Subtitle: "Train today. Perform tomorrow.",
+      description: "By practicing full workflows in VR, students arrive at physical labs and job sites prepared, confident, and ready to work with real systems.",
+      description2: "",
+      image: Resilience
     }
   ]
 

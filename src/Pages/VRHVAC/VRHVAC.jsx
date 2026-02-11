@@ -6,6 +6,7 @@ import Mindsets from './Mindsets'
 import ShapeLearners from './ShapeLearners'
 import VRweldSafety from './VRweldSafety'
 import HeroSection from './HeroSection'
+import MultiplyerClassroom from './MultiplyerClassroom'
 
 const VRHVAC = () => {
   return (
@@ -13,6 +14,7 @@ const VRHVAC = () => {
         <VRWeldHero/>
        <VRweldSafety/>
        <Mindsets/>
+       <MultiplyerClassroom/>
         <KeyBenefits/>
          
         <ShapeLearners/>

@@ -182,7 +182,7 @@ const ShapeLearners = () => {
 
 
                 </div>
-                <div className='w-full pt-8 justify-center items-center text-center'>
+                <div className='w-full pt-8 pb-3 justify-center items-center text-center'>
                     <p className='text-base italic text-gray-700 leading-relaxed pt-2'>Teach concepts once. Reinforce them everywhere.</p>
                 </div>
             </div>

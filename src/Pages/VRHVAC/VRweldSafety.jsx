@@ -3,7 +3,7 @@ import vrglass from '../../image/vrglass.png'
 
 const VRweldSafety = () => {
   return (
-    <div className="w-full bg-white py-10">
+    <div className="w-full bg-white py-10 mt-0 md:mt-8">
       <div className="container max-w-[1400px] mx-auto px-6 xl:px-8">
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 xl:gap-16 items-center">
