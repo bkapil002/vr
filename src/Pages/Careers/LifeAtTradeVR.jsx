@@ -5,7 +5,7 @@ const LifeAtMicrosoft = () => {
     {
       id: 1,
       title: "Benefits",
-      description: "Explore Microsoft's world-class benefits designed to help you and your family live well.",
+      description: "Explore tradevr's world-class benefits designed to help you and your family live well.",
       image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80",
       link: "#"
     },
@@ -26,7 +26,7 @@ const LifeAtMicrosoft = () => {
     {
       id: 4,
       title: "Hiring Tips",
-      description: "Explore resources to help you prepare Microsoft is here to support your interview journey.",
+      description: "Explore resources to help you prepare tradevr is here to support your interview journey.",
       image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80",
       link: "#"
     }
@@ -37,7 +37,7 @@ const LifeAtMicrosoft = () => {
       <div className="">
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-8 md:mb-12">
-          Life at Microsoft
+          Life at TradeVR
         </h2>
 
         {/* Cards Grid */}

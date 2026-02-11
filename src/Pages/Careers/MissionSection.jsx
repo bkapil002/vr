@@ -28,7 +28,7 @@ const MissionSection = () => {
             </h2>
             
             <p className="text-[17px] text-gray-700 leading-relaxed">
-              When you join Microsoft, you're not just stepping into a job— you're stepping into a mission-driven company where purpose is at the heart of everything we do.
+              When you join tradevr, you're not just stepping into a job— you're stepping into a mission-driven company where purpose is at the heart of everything we do.
             </p>
             
             <p className="text-[17px] text-gray-700 leading-relaxed">
