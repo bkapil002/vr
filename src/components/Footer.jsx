@@ -33,7 +33,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-sm  text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/" className="text-sm  text-[#000000]  hover:underline transition-colors duration-200">
                   All VR Modules
                 </Link>
               </li>

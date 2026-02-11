@@ -16,6 +16,7 @@ import VRWeld from "./Pages/VRWeld/VRWeld";
 import VRSterile from "./Pages/VRSterile/VRSterile";
 import VRHVAC from "./Pages/VRHVAC/VRHVAC";
 import VRMechatronics from "./Pages/VRMechatronics/VRMechatronics";
+import Blog from "./Pages/Blog/Blog";
 
 function Layout() {
   const location = useLocation();
@@ -43,6 +44,7 @@ function Layout() {
         <Route path="/vrsterile" element={<VRSterile/>}/>
         <Route path="/vrhvac" element={<VRHVAC/>}/>
         <Route path ='/vrmechatronics' element={<VRMechatronics/>}/>
+        <Route path="/blog" element={<Blog/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}
