@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BlogArticles = () => {
   // Featured articles array
@@ -9,7 +10,7 @@ const BlogArticles = () => {
       date: "Jan 27, 2026",
       author: "Judson Althoff - CEO, Teade VR commercial business",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/12/OMB-FY26Q2-Hero.jpg",
-      link: "#"
+      link: "/blog"
     },
     {
       id: 2,
@@ -17,7 +18,7 @@ const BlogArticles = () => {
       date: "Jan 26, 2026",
       author: "Scott Guthrie - Executive Vice President, Cloud + AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2026/01/Maia200_header-960x540.jpg",
-      link: "#"
+      link: "/blog"
     }
   ];
 
@@ -29,7 +30,7 @@ const BlogArticles = () => {
       date: "Nov 12, 2025",
       author: "Scott Guthrie - Executive Vice President, Cloud + AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-Datacenter-11_11-Hero-480x270.jpg",
-      link: "#"
+      link: "/blog"
     },
     {
       id: 2,
@@ -37,7 +38,7 @@ const BlogArticles = () => {
       date: "Nov 11, 2025",
       author: "Alysa Taylor - Chief Marketing Officer, Commercial Cloud & AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-IDC-25-Art-Hero-Final_Final-480x270.png",
-      link: "#"
+      link: "/blog"
     },
     {
       id: 3,
@@ -65,14 +66,14 @@ const BlogArticles = () => {
                     className="w-full h-80 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <div className="space-y-2">
+                <Link to={article.link} className="space-y-2">
                   <p className="text-sm text-gray-600">
                     {article.date} | {article.author}
                   </p>
                   <h3 className="text-xl font-semibold text-gray-900 group-hover:text-[#005a9e] transition-colors">
                     {article.title}
                   </h3>
-                </div>
+                </Link>
               </div>
             ))}
           </div>
@@ -91,14 +92,14 @@ const BlogArticles = () => {
                     className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
-                <div className="space-y-2">
+                <Link to={article.link} className="space-y-2">
                   <p className="text-xs text-gray-600">
                     {article.date} | {article.author}
                   </p>
                   <h3 className="text-base font-semibold text-gray-900 group-hover:text-[#005a9e] transition-colors">
                     {article.title}
                   </h3>
-                </div>
+                </Link>
               </div>
             ))}
           </div>

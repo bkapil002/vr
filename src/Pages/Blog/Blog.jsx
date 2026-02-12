@@ -3,7 +3,7 @@ import React from 'react'
 const Blog = () => {
   return (
     <div>
-      <div className="min-h-screen bg-gray-100">
+      <div className=" bg-gray-100">
         {/* Desktop Layout */}
         <div className="hidden md:block max-w-7xl mx-auto px-8 py-16">
           <div className="grid grid-cols-2 gap-12 items-center">
