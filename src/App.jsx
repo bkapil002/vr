@@ -44,7 +44,8 @@ function Layout() {
         <Route path="/vrsterile" element={<VRSterile/>}/>
         <Route path="/vrhvac" element={<VRHVAC/>}/>
         <Route path ='/vrmechatronics' element={<VRMechatronics/>}/>
-        <Route path="/blog" element={<Blog/>}/>
+        <Route path="/blog-articles" element={<BlogArticles/>}/>
+        <Route path="/blog-articles/:id" element={<Blog/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}

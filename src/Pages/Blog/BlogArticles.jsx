@@ -10,7 +10,7 @@ const BlogArticles = () => {
       date: "Jan 27, 2026",
       author: "Judson Althoff - CEO, Teade VR commercial business",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/12/OMB-FY26Q2-Hero.jpg",
-      link: "/blog"
+      link: "/blog-articles/how-teade-vr-is-empowering-frontier-transformation"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ const BlogArticles = () => {
       date: "Jan 26, 2026",
       author: "Scott Guthrie - Executive Vice President, Cloud + AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2026/01/Maia200_header-960x540.jpg",
-      link: "/blog"
+      link: "/blog-articles/maia-200-ai-accelerator-for-inference"
     }
   ];
 
@@ -30,7 +30,7 @@ const BlogArticles = () => {
       date: "Nov 12, 2025",
       author: "Scott Guthrie - Executive Vice President, Cloud + AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-Datacenter-11_11-Hero-480x270.jpg",
-      link: "/blog"
+      link: "/blog-articles/infinite-scale-azure-ai-superfactory"
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ const BlogArticles = () => {
       date: "Nov 11, 2025",
       author: "Alysa Taylor - Chief Marketing Officer, Commercial Cloud & AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-IDC-25-Art-Hero-Final_Final-480x270.png",
-      link: "/blog"
+      link: "/blog-articles/bridging-ai-divide-frontier-firms"
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ const BlogArticles = () => {
       date: "Nov 5, 2025",
       author: "Charlie Bell - Executive Vice President Security",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-Security-11-5-Hero_Final-480x270.jpg",
-      link: "#"
+      link: "/blog-articles/ai-double-agents-cybersecurity"
     }
   ];
 
