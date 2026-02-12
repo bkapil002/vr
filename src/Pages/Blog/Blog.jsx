@@ -13,7 +13,7 @@ const Blog = () => {
               <div className="bg-black text-white inline-block px-4 py-2 mb-6">
                 15 January, 2026
               </div>
-              <h1 className="text-5xl font-semibold leading-tight">
+              <h1 className="text-5xl  leading-tight">
                 tradevr and ACTU sign landmark agreement to put workers' voices and skilling at the heart of Australia's
                 <br />
                 AI transformation
