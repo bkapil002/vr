@@ -92,7 +92,10 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <a href="/support-center"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                   className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   Support Center
                 </a>
               </li>

@@ -22,6 +22,7 @@ import WorkforceUpskilling from "./Pages/WorkforceUpskilling/WorkforceUpskilling
 import PrisonEducation from "./Pages/PrisonEducation/PrisonEducation";
 import ReskillingPrograms from "./Pages/ReskillingPrograms/ReskillingPrograms";
 import GlobalDeployments from "./Pages/GlobalDeployments/GlobalDeployments";
+import SupportCenter from "./Pages/SupportCenter/SupportCenter";
 
 function Layout() {
   const location = useLocation();
@@ -56,6 +57,7 @@ function Layout() {
         <Route path="/prison-education" element={<PrisonEducation/>}/>
         <Route path="/reskilling-programs" element={<ReskillingPrograms/>}/>
         <Route path="/global-deployments" element={<GlobalDeployments/>}/>
+        <Route path="/support-center" element={<SupportCenter/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}
