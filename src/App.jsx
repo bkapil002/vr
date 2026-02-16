@@ -18,6 +18,8 @@ import VRHVAC from "./Pages/VRHVAC/VRHVAC";
 import VRMechatronics from "./Pages/VRMechatronics/VRMechatronics";
 import Blog from "./Pages/Blog/Blog";
 import SchoolsColleges from "./Pages/SchoolsColleges/SchoolsColleges";
+import WorkforceUpskilling from "./Pages/WorkforceUpskilling/WorkforceUpskilling";
+import PrisonEducation from "./Pages/PrisonEducation/PrisonEducation";
 
 function Layout() {
   const location = useLocation();
@@ -48,6 +50,8 @@ function Layout() {
         <Route path="/blog-articles" element={<BlogArticles/>}/>
         <Route path="/blog-articles/:id" element={<Blog/>}/>
         <Route path="/schools-and-colleges" element={<SchoolsColleges/>}/>
+        <Route path="/workforce-upskilling" element={<WorkforceUpskilling/>}/>
+        <Route path="/prison-education" element={<PrisonEducation/>}/>
       </Routes>
 
       {!hideLayout && <Footer />}

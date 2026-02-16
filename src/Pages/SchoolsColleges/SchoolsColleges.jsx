@@ -1,36 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-/* ── Scroll-trigger hook ── */
-const useInView = (threshold = 0.15) => {
-  const ref = useRef(null);
-  const [inView, setInView] = useState(false);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) setInView(true); },
-      { threshold }
-    );
-    if (ref.current) observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
-  return [ref, inView];
-};
-
-const FadeIn = ({ children, delay = 0, className = "" }) => {
-  const [ref, inView] = useInView();
-  return (
-    <div
-      ref={ref}
-      className={className}
-      style={{
-        opacity: inView ? 1 : 0,
-        transform: inView ? "translateY(0)" : "translateY(24px)",
-        transition: `opacity 0.65s ease ${delay}s, transform 0.65s ease ${delay}s`,
-      }}
-    >
-      {children}
-    </div>
-  );
-};
 
 /* ── SVG Icon Components ── */
 const IconWrench = ({ className }) => (
@@ -512,7 +481,7 @@ export default function SchoolsColleges() {
             </h3>
             <button
               
-              className="bg-white text-[#005a9e] hover:bg-blue-50 font-bold px-10 py-4 rounded-sm text-base shadow-xl transition-colors duration-150"
+              className="bg-white text-[#005a9e] hover:bg-blue-50 font-bold px-10 py-3 rounded-sm text-base shadow-xl transition-colors duration-150"
             >
               Request a demo
             </button>
