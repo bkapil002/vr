@@ -45,9 +45,9 @@ export default function Footer() {
             <h3 className="font-bold text-gray-900 text-base tracking-tight">Solutions</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
+                <Link to="/schools-and-colleges" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
                   Schools & Colleges
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="#" className="text-sm text-[#000000]  hover:underline transition-colors duration-200">
