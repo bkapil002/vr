@@ -235,20 +235,8 @@ const transformations = [
 
 /* ── Component ── */
 export default function SchoolsColleges() {
-  const [demoOpen, setDemoOpen] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [form, setForm] = useState({ name: "", institution: "", email: "" });
 
-  const handleSubmit = () => {
-    if (form.name && form.institution && form.email) {
-      setSubmitted(true);
-      setTimeout(() => {
-        setDemoOpen(false);
-        setSubmitted(false);
-        setForm({ name: "", institution: "", email: "" });
-      }, 2500);
-    }
-  };
+
 
   return (
     <div className="font-sans bg-white text-gray-900 overflow-x-hidden">
@@ -268,7 +256,7 @@ export default function SchoolsColleges() {
             <span className="inline-block text-xs font-bold tracking-widest uppercase text-blue-200 mb-5 border border-blue-300/40 px-3 py-1 rounded-sm backdrop-blur-sm">
               Schools &amp; Colleges
             </span>
-            <h1 className="text-4xl lg:text-6xl font-bold leading-tight tracking-tight text-white mb-5 drop-shadow-md">
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white mb-5 drop-shadow-md">
               Beyond the Classroom.<br />
               <span className="text-sky-300">Into the Future.</span>
             </h1>
@@ -277,7 +265,6 @@ export default function SchoolsColleges() {
             </p>
             <div className="flex flex-wrap gap-3">
               <button
-                onClick={() => setDemoOpen(true)}
                 className="bg-white text-[#005a9e] hover:bg-blue-50 font-bold px-8 py-3 rounded-sm text-sm transition-colors duration-150 shadow-lg"
               >
                 Request a demo
@@ -292,11 +279,8 @@ export default function SchoolsColleges() {
 
       {/* ── WHY THIS MATTERS ── */}
       <section className="py-10 max-w-7xl mx-auto px-8">
-        <FadeIn>
           <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">The Problem</span>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-5">Why This Matters</h2>
-        </FadeIn>
-        <FadeIn delay={0.1}>
           <p className="text-base lg:text-lg text-gray-600 leading-relaxed max-w-2xl mb-4">
             Students don't drop out of learning because they lack intelligence.{" "}
             <strong className="text-gray-900">They disengage because learning feels distant from reality.</strong>
@@ -309,22 +293,18 @@ export default function SchoolsColleges() {
           <p className="text-base text-gray-500 leading-relaxed max-w-2xl">
             Traditional vocational labs attempt to bridge this gap — but they come with real constraints.
           </p>
-        </FadeIn>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
           {problems.map(({ Icon, text, color, bg }, i) => (
-            <FadeIn key={i} delay={i * 0.08}>
               <div className="border border-gray-200 rounded-sm p-6 bg-white hover:shadow-md hover:-translate-y-1 transition-all duration-200 h-full">
                 <div className={`w-11 h-11 rounded-full ${bg} flex items-center justify-center mb-4`}>
                   <Icon className={`w-5 h-5 ${color}`} />
                 </div>
                 <p className="text-sm font-semibold text-gray-800 leading-snug">{text}</p>
               </div>
-            </FadeIn>
           ))}
         </div>
 
-        <FadeIn delay={0.15}>
           <div className="mt-12 border-l-4 border-[#005a9e] bg-blue-50 px-7 py-6 rounded-r-sm">
             <p className="text-[#005a9e] font-semibold text-sm mb-1">The question becomes:</p>
             <p className="text-xl font-bold text-gray-900 leading-snug">
@@ -334,23 +314,20 @@ export default function SchoolsColleges() {
               And more importantly — how do we bring relevance back into the classroom?
             </p>
           </div>
-        </FadeIn>
       </section>
 
       {/* ── THE TRADEVR ANSWER ── */}
       <section className="bg-gray-50 ">
         <div className="max-w-7xl mx-auto px-8">
-          <FadeIn>
             <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">The Solution</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">The TradeVR Answer</h2>
             <p className="text-gray-500 text-base max-w-xl mb-12">
               With immersive VR skill training, schools and colleges can reimagine hands-on learning.
             </p>
-          </FadeIn>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {benefits.map(({ Icon, title, desc, color, bg }, i) => (
-              <FadeIn key={i} delay={i * 0.08}>
+              
                 <div className="bg-white border border-gray-200 rounded-sm p-7 h-full hover:shadow-lg hover:-translate-y-1 transition-all duration-200">
                   <div className={`w-11 h-11 rounded-full ${bg} flex items-center justify-center mb-4`}>
                     <Icon className={`w-5 h-5 ${color}`} />
@@ -358,11 +335,10 @@ export default function SchoolsColleges() {
                   <h3 className="font-bold text-gray-900 mb-2">{title}</h3>
                   <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
                 </div>
-              </FadeIn>
+              
             ))}
           </div>
 
-          <FadeIn delay={0.2}>
             <div className="mt-12 relative overflow-hidden rounded-sm">
               {/* Background with image overlay */}
               <div
@@ -405,13 +381,12 @@ export default function SchoolsColleges() {
                 </div>
               </div>
             </div>
-          </FadeIn>
         </div>
       </section>
 
       {/* ── DESIGNED FOR ── */}
       <section className="py-10 max-w-7xl mx-auto px-8">
-        <FadeIn>
+    
           <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Designed For</span>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">
             Institutions That Believe Skills Matter
@@ -419,8 +394,6 @@ export default function SchoolsColleges() {
           <p className="text-gray-500 text-base mb-8 max-w-lg">
             TradeVR is built for every institution committed to outcome-driven education.
           </p>
-        </FadeIn>
-        <FadeIn delay={0.1}>
           <div className="flex flex-wrap gap-2">
             {institutions.map((inst, i) => (
               <span key={i} className="inline-block bg-blue-50 text-[#005a9e] text-sm font-semibold px-4 py-2 rounded-sm border border-blue-100">
@@ -428,25 +401,25 @@ export default function SchoolsColleges() {
               </span>
             ))}
           </div>
-        </FadeIn>
+        
       </section>
 
       {/* ── WHAT CHANGES ── */}
       <section className="bg-gray-50 py-10">
         <div className="max-w-7xl mx-auto px-8">
-          <FadeIn>
+          
             <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Transformation</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-10">What Changes</h2>
-          </FadeIn>
+          
           <div className="flex flex-col gap-3">
             {transformations.map((t, i) => (
-              <FadeIn key={i} delay={i * 0.1}>
+             
                 <div className="flex items-stretch bg-white border border-gray-200 rounded-sm overflow-hidden">
                   <div className="flex-1 px-7 py-5 text-gray-400 font-medium text-base border-r border-gray-200">{t.from}</div>
                   <div className="px-6 flex items-center text-[#005a9e] font-bold text-xl">→</div>
                   <div className="flex-1 px-7 py-5 text-gray-900 font-bold text-base">{t.to}</div>
                 </div>
-              </FadeIn>
+              
             ))}
           </div>
         </div>
@@ -457,7 +430,7 @@ export default function SchoolsColleges() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           {/* Left text */}
           <div className="lg:w-80 flex-shrink-0">
-            <FadeIn>
+          
               <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">For Educators</span>
               <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-4 leading-snug">
                 Built for Educators,<br />Not Just Learners
@@ -465,13 +438,13 @@ export default function SchoolsColleges() {
               <p className="text-gray-500 text-base leading-relaxed">
                 TradeVR doesn't replace instructors — it strengthens them with powerful tools for assessment and insight.
               </p>
-            </FadeIn>
+            
           </div>
 
           {/* Right — analytics cards with SVG icons */}
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
             {analytics.map(({ Icon, label, desc, color }, i) => (
-              <FadeIn key={i} delay={i * 0.07} className={i === 4 ? "sm:col-span-2 lg:col-span-1" : ""}>
+              
                 <div className="flex items-start gap-4 bg-white border border-gray-200 rounded-sm px-5 py-5 hover:border-[#005a9e] hover:shadow-md transition-all duration-200 group h-full">
                   <div className={`w-10 h-10 rounded flex items-center justify-center flex-shrink-0 ${color}`}>
                     <Icon className="w-5 h-5" />
@@ -481,7 +454,7 @@ export default function SchoolsColleges() {
                     <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
                   </div>
                 </div>
-              </FadeIn>
+              
             ))}
           </div>
         </div>
@@ -490,21 +463,21 @@ export default function SchoolsColleges() {
       {/* ── INTEGRATION STEPS ── */}
       <section className="bg-gray-50 py-10">
         <div className="max-w-7xl mx-auto px-8">
-          <FadeIn>
+          
             <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Integration</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-10">
               TradeVR Integrates into Your Campus
             </h2>
-          </FadeIn>
+          
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {steps.map((s, i) => (
-              <FadeIn key={i} delay={i * 0.1}>
+              
                 <div className="relative bg-white border border-gray-200 rounded-sm p-7 overflow-hidden hover:shadow-md hover:-translate-y-1 transition-all duration-200">
                   <div className="absolute top-0 left-0 w-1 h-full bg-[#005a9e]" />
                   <p className="text-5xl font-bold text-blue-100 leading-none mb-2">{s.num}</p>
                   <p className="text-sm font-bold text-gray-900 leading-snug">{s.title}</p>
                 </div>
-              </FadeIn>
+              
             ))}
           </div>
         </div>
@@ -512,7 +485,7 @@ export default function SchoolsColleges() {
 
       {/* ── EXPAND ACCESS — infra with SVG icons ── */}
       <section className="py-10 max-w-7xl mx-auto px-8">
-        <FadeIn>
+       
           <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Infrastructure</span>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-2">
             Expand Access Without<br />Expanding Infrastructure
@@ -520,11 +493,11 @@ export default function SchoolsColleges() {
           <p className="text-gray-500 text-base mb-10 max-w-lg">
             Deploy TradeVR labs in any existing space — no renovation required.
           </p>
-        </FadeIn>
+        
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {infra.map(({ Icon, text, desc, color, bg }, i) => (
-            <FadeIn key={i} delay={i * 0.08}>
+            
               <div className="bg-white border border-gray-200 rounded-sm p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-200 group h-full">
                 {/* Icon circle */}
                 <div className={`w-12 h-12 rounded-full ${bg} flex items-center justify-center mb-4`}>
@@ -533,17 +506,17 @@ export default function SchoolsColleges() {
                 <h3 className={`font-bold text-sm mb-1 group-hover:${color} transition-colors duration-150 text-gray-900`}>{text}</h3>
                 <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
               </div>
-            </FadeIn>
+           
           ))}
         </div>
 
-        <FadeIn delay={0.25}>
+        
           <div className="mt-10 flex items-center gap-3">
             <div className="h-px flex-1 bg-gray-200" />
             <p className="text-base font-bold text-[#005a9e] px-4">More access. Less overhead.</p>
             <div className="h-px flex-1 bg-gray-200" />
           </div>
-        </FadeIn>
+        
       </section>
 
       {/* ── CTA CLOSING ── */}
@@ -554,82 +527,25 @@ export default function SchoolsColleges() {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#002f54]/95 via-[#005a9e]/88 to-sky-700/80" />
         <div className="relative z-10">
-          <FadeIn>
+        
             <p className="text-xs font-bold tracking-widest uppercase text-blue-200 mb-4">Closing</p>
-            <h2 className="text-3xl lg:text-5xl font-bold text-white leading-tight tracking-tight max-w-2xl mx-auto mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight max-w-2xl mx-auto mb-4">
               Because Education Shouldn't Just Prepare Students for Exams.
             </h2>
-            <h3 className="text-xl lg:text-2xl font-light text-blue-100 mb-10">
+            <h3 className="text-lg lg:text-xl font-light text-blue-100 mb-10">
               It Should Prepare Them for Life.
             </h3>
             <button
-              onClick={() => setDemoOpen(true)}
+              
               className="bg-white text-[#005a9e] hover:bg-blue-50 font-bold px-10 py-4 rounded-sm text-base shadow-xl transition-colors duration-150"
             >
               Request a demo
             </button>
-          </FadeIn>
+          
         </div>
       </section>
 
-      {/* ── DEMO MODAL ── */}
-      {demoOpen && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center backdrop-blur-sm"
-          onClick={(e) => { if (e.target === e.currentTarget) setDemoOpen(false); }}
-        >
-          <div className="bg-white rounded-sm shadow-2xl p-10 w-full max-w-md mx-4">
-            {!submitted ? (
-              <>
-                <div className="flex justify-between items-start mb-7">
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">Request a Demo</h3>
-                    <p className="text-sm text-gray-400 mt-1">We'll reach out within one business day.</p>
-                  </div>
-                  <button onClick={() => setDemoOpen(false)} className="text-gray-400 hover:text-gray-700 text-2xl leading-none font-light">×</button>
-                </div>
-                <div className="flex flex-col gap-3">
-                  <input
-                    type="text"
-                    placeholder="Full name"
-                    value={form.name}
-                    onChange={(e) => setForm({ ...form, name: e.target.value })}
-                    className="w-full border border-gray-300 focus:border-[#005a9e] outline-none rounded-sm px-4 py-3 text-sm transition-colors duration-150"
-                  />
-                  <input
-                    type="text"
-                    placeholder="Institution name"
-                    value={form.institution}
-                    onChange={(e) => setForm({ ...form, institution: e.target.value })}
-                    className="w-full border border-gray-300 focus:border-[#005a9e] outline-none rounded-sm px-4 py-3 text-sm transition-colors duration-150"
-                  />
-                  <input
-                    type="email"
-                    placeholder="Work email"
-                    value={form.email}
-                    onChange={(e) => setForm({ ...form, email: e.target.value })}
-                    className="w-full border border-gray-300 focus:border-[#005a9e] outline-none rounded-sm px-4 py-3 text-sm transition-colors duration-150"
-                  />
-                  <button
-                    onClick={handleSubmit}
-                    className="w-full bg-[#005a9e] hover:bg-[#004a87] text-white font-semibold py-3 rounded-sm text-sm transition-colors duration-150 mt-1"
-                  >
-                    Submit Request
-                  </button>
-                </div>
-              </>
-            ) : (
-              <div className="text-center py-8">
-                <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <IconCheckCircle className="w-8 h-8 text-emerald-600" />
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Request Submitted!</h3>
-                <p className="text-gray-500 text-sm">Our team will contact you shortly.</p>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }
