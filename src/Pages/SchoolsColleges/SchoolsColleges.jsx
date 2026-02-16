@@ -251,7 +251,7 @@ export default function SchoolsColleges() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#002f54]/90 via-[#005a9e]/75 to-transparent" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-8 py-24 lg:py-32 w-full">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-6 xl:px-8 py-24 lg:py-32 w-full">
           <div className="max-w-xl">
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white mb-5 drop-shadow-md">
               Beyond the Classroom.<br />
@@ -275,7 +275,7 @@ export default function SchoolsColleges() {
       </section>
 
       {/* ── WHY THIS MATTERS ── */}
-      <section className="py-10 max-w-7xl mx-auto px-8">
+      <section className="py-10 max-w-[1400px] mx-auto px-6 xl:px-8">
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-5">Why This Matters</h2>
           <p className="text-base lg:text-lg text-gray-600 leading-relaxed max-w-2xl mb-4">
             Students don't drop out of learning because they lack intelligence.{" "}
@@ -313,7 +313,7 @@ export default function SchoolsColleges() {
 
       {/* ── THE TRADEVR ANSWER ── */}
       <section className="bg-gray-50 py-10 ">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-[1400px] mx-auto px-6 xl:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">The TradeVR Answer</h2>
             <p className="text-gray-500 text-base max-w-xl mb-12">
               With immersive VR skill training, schools and colleges can reimagine hands-on learning.
@@ -378,7 +378,7 @@ export default function SchoolsColleges() {
       </section>
 
       {/* ── DESIGNED FOR ── */}
-      <section className="py-10 max-w-7xl mx-auto px-8">
+      <section className="py-10 max-w-[1400px] mx-auto px-6 xl:px-8">
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">
             Institutions That Believe Skills Matter
           </h2>
@@ -397,7 +397,7 @@ export default function SchoolsColleges() {
 
       {/* ── WHAT CHANGES ── */}
       <section className="bg-gray-50 py-10">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-[1400px] mx-auto px-6 xl:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-10">What Changes</h2>
           
           <div className="flex flex-col gap-3">
@@ -415,7 +415,7 @@ export default function SchoolsColleges() {
       </section>
 
       {/* ── BUILT FOR EDUCATORS — analytics with SVG icons ── */}
-      <section className="py-10 max-w-7xl mx-auto px-8">
+      <section className="py-10 max-w-[1400px] mx-auto px-6 xl:px-8">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
             {/* Right — analytics cards with SVG icons */}
           <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 order-2 lg:order-1 ">
@@ -450,7 +450,7 @@ export default function SchoolsColleges() {
 
       {/* ── INTEGRATION STEPS ── */}
       <section className="bg-gray-50 py-10">
-        <div className="max-w-7xl mx-auto px-8">
+        <div className="max-w-[1400px] mx-auto px-6 xl:px-8">
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-10">
               TradeVR Integrates into Your Campus
             </h2>
@@ -470,7 +470,7 @@ export default function SchoolsColleges() {
       </section>
 
       {/* ── EXPAND ACCESS — infra with SVG icons ── */}
-      <section className="py-10 max-w-7xl mx-auto px-8 mb-10">
+      <section className="py-10 max-w-[1400px] mx-auto px-6 xl:px-8 mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-2">
             Expand Access Without Expanding <br/>Infrastructure
           </h2>
