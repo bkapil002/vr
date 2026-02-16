@@ -25,7 +25,7 @@ const CommitmentsSection = () => {
   ]
 
   return (
-    <div className="w-full bg-gray-50 py-9 lg:py-10">
+    <div className="w-full py-9 lg:py-10">
       <div className="">
         
         {/* Header Section */}

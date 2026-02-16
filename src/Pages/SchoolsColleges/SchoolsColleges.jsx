@@ -253,9 +253,6 @@ export default function SchoolsColleges() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-8 py-24 lg:py-32 w-full">
           <div className="max-w-xl">
-            <span className="inline-block text-xs font-bold tracking-widest uppercase text-blue-200 mb-5 border border-blue-300/40 px-3 py-1 rounded-sm backdrop-blur-sm">
-              Schools &amp; Colleges
-            </span>
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight tracking-tight text-white mb-5 drop-shadow-md">
               Beyond the Classroom.<br />
               <span className="text-sky-300">Into the Future.</span>
@@ -279,7 +276,6 @@ export default function SchoolsColleges() {
 
       {/* ── WHY THIS MATTERS ── */}
       <section className="py-10 max-w-7xl mx-auto px-8">
-          <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">The Problem</span>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-5">Why This Matters</h2>
           <p className="text-base lg:text-lg text-gray-600 leading-relaxed max-w-2xl mb-4">
             Students don't drop out of learning because they lack intelligence.{" "}
@@ -306,7 +302,6 @@ export default function SchoolsColleges() {
         </div>
 
           <div className="mt-12 border-l-4 border-[#005a9e] bg-blue-50 px-7 py-6 rounded-r-sm">
-            <p className="text-[#005a9e] font-semibold text-sm mb-1">The question becomes:</p>
             <p className="text-xl font-bold text-gray-900 leading-snug">
               How do we make skill-building <em>safe, scalable, and inspiring?</em>
             </p>
@@ -319,7 +314,6 @@ export default function SchoolsColleges() {
       {/* ── THE TRADEVR ANSWER ── */}
       <section className="bg-gray-50 py-10 ">
         <div className="max-w-7xl mx-auto px-8">
-            <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">The Solution</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">The TradeVR Answer</h2>
             <p className="text-gray-500 text-base max-w-xl mb-12">
               With immersive VR skill training, schools and colleges can reimagine hands-on learning.
@@ -349,7 +343,6 @@ export default function SchoolsColleges() {
 
               <div className="relative z-10 px-10 py-12">
                 {/* Header */}
-                <p className="text-xs font-bold tracking-widest uppercase text-sky-300 mb-2">The Student Experience</p>
                 <h3 className="text-2xl font-bold text-white mb-10 max-w-lg leading-snug">
                   Students don't just <em className="not-italic text-sky-300">imagine</em> the job through theory.<br />
                   <span className="font-light text-blue-100">They live it.</span>
@@ -386,8 +379,6 @@ export default function SchoolsColleges() {
 
       {/* ── DESIGNED FOR ── */}
       <section className="py-10 max-w-7xl mx-auto px-8">
-    
-          <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Designed For</span>
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">
             Institutions That Believe Skills Matter
           </h2>
@@ -407,8 +398,6 @@ export default function SchoolsColleges() {
       {/* ── WHAT CHANGES ── */}
       <section className="bg-gray-50 py-10">
         <div className="max-w-7xl mx-auto px-8">
-          
-            <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Transformation</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-10">What Changes</h2>
           
           <div className="flex flex-col gap-3">
@@ -428,21 +417,8 @@ export default function SchoolsColleges() {
       {/* ── BUILT FOR EDUCATORS — analytics with SVG icons ── */}
       <section className="py-10 max-w-7xl mx-auto px-8">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
-          {/* Left text */}
-          <div className="lg:w-80 flex-shrink-0">
-          
-              <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">For Educators</span>
-              <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-4 leading-snug">
-                Built for Educators,<br />Not Just Learners
-              </h2>
-              <p className="text-gray-500 text-base leading-relaxed">
-                TradeVR doesn't replace instructors — it strengthens them with powerful tools for assessment and insight.
-              </p>
-            
-          </div>
-
-          {/* Right — analytics cards with SVG icons */}
-          <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* Right — analytics cards with SVG icons */}
+          <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 order-2 lg:order-1 ">
             {analytics.map(({ Icon, label, desc, color }, i) => (
               
                 <div className="flex items-start gap-4 bg-white border border-gray-200 rounded-sm px-5 py-5 hover:border-[#005a9e] hover:shadow-md transition-all duration-200 group h-full">
@@ -457,14 +433,24 @@ export default function SchoolsColleges() {
               
             ))}
           </div>
+          {/* Left text */}
+          <div className="lg:w-80 flex-shrink-0  order-1 lg:order-2" >
+              <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-4 leading-snug">
+                Built for Educators,<br />Not Just Learners
+              </h2>
+              <p className="text-gray-500 text-base leading-relaxed">
+                TradeVR doesn't replace instructors — it strengthens them with powerful tools for assessment and insight.
+              </p>
+            
+          </div>
+
+          
         </div>
       </section>
 
       {/* ── INTEGRATION STEPS ── */}
       <section className="bg-gray-50 py-10">
         <div className="max-w-7xl mx-auto px-8">
-          
-            <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Integration</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-10">
               TradeVR Integrates into Your Campus
             </h2>
@@ -484,11 +470,9 @@ export default function SchoolsColleges() {
       </section>
 
       {/* ── EXPAND ACCESS — infra with SVG icons ── */}
-      <section className="py-10 max-w-7xl mx-auto px-8">
-       
-          <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">Infrastructure</span>
+      <section className="py-10 max-w-7xl mx-auto px-8 mb-10">
           <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-2">
-            Expand Access Without<br />Expanding Infrastructure
+            Expand Access Without Expanding <br/>Infrastructure
           </h2>
           <p className="text-gray-500 text-base mb-10 max-w-lg">
             Deploy TradeVR labs in any existing space — no renovation required.
@@ -509,13 +493,6 @@ export default function SchoolsColleges() {
            
           ))}
         </div>
-
-        
-          <div className="mt-10 flex items-center gap-3">
-            <div className="h-px flex-1 bg-gray-200" />
-            <p className="text-base font-bold text-[#005a9e] px-4">More access. Less overhead.</p>
-            <div className="h-px flex-1 bg-gray-200" />
-          </div>
         
       </section>
 
@@ -527,8 +504,6 @@ export default function SchoolsColleges() {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-[#002f54]/95 via-[#005a9e]/88 to-sky-700/80" />
         <div className="relative z-10">
-        
-            <p className="text-xs font-bold tracking-widest uppercase text-blue-200 mb-4">Closing</p>
             <h2 className="text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight max-w-2xl mx-auto mb-4">
               Because Education Shouldn't Just Prepare Students for Exams.
             </h2>

@@ -8,10 +8,10 @@ import SocialMedia from './SocialMedia'
 
 const About = () => {
   return (
-    <>
+    <div className=' bg-white'>
     <Hero/>
     <div className='flex justify-center'>
-    <div className='max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 '>
+    <div className=' max-w-[1400px] mx-auto px-4 sm:px-6 md:px-8 '>
     
     <OpportunitySection/>
     <CommitmentsSection/>
@@ -20,7 +20,7 @@ const About = () => {
     <SocialMedia/>
     </div>
     </div>
-    </>
+    </div>
   )
 }
 
