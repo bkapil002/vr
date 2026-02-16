@@ -367,7 +367,7 @@ export default function SchoolsColleges() {
               {/* Background with image overlay */}
               <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: "url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=1400&q=80')" }}
+               
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#002f54]/97 via-[#005a9e]/92 to-[#0078c8]/85" />
 
