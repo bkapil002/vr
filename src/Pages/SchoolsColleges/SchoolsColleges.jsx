@@ -317,7 +317,7 @@ export default function SchoolsColleges() {
       </section>
 
       {/* ── THE TRADEVR ANSWER ── */}
-      <section className="bg-gray-50 ">
+      <section className="bg-gray-50 py-10 ">
         <div className="max-w-7xl mx-auto px-8">
             <span className="text-xs font-bold tracking-widest uppercase text-[#005a9e]">The Solution</span>
             <h2 className="text-3xl lg:text-4xl font-bold tracking-tight mt-3 mb-3">The TradeVR Answer</h2>
