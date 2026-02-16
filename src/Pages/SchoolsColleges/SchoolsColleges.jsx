@@ -326,7 +326,7 @@ export default function SchoolsColleges() {
                   <div className={`w-11 h-11 rounded-full ${bg} flex items-center justify-center mb-4`}>
                     <Icon className={`w-5 h-5 ${color}`} />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{title}</h3>
+                  {/* <h3 className="font-bold text-gray-900 mb-2">{title}</h3> */}
                   <p className="text-sm text-gray-500 leading-relaxed">{desc}</p>
                 </div>
               
@@ -427,7 +427,7 @@ export default function SchoolsColleges() {
                   </div>
                   <div>
                     <p className="font-bold text-gray-900 text-sm mb-1 group-hover:text-[#005a9e] transition-colors duration-150">{label}</p>
-                    <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                    {/* <p className="text-xs text-gray-500 leading-relaxed">{desc}</p> */}
                   </div>
                 </div>
               
@@ -488,7 +488,7 @@ export default function SchoolsColleges() {
                   <Icon className={`w-6 h-6 ${color}`} />
                 </div>
                 <h3 className={`font-bold text-sm mb-1 group-hover:${color} transition-colors duration-150 text-gray-900`}>{text}</h3>
-                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                
               </div>
            
           ))}
