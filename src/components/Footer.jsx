@@ -124,7 +124,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="/careers"
+                  href="/our-mission"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-[#000000] hover:underline transition-colors duration-200"
@@ -144,7 +144,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="/partnerships"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-[#000000] hover:underline transition-colors duration-200"

@@ -6,7 +6,7 @@ const BlogArticles = () => {
   const featuredArticles = [
     {
       id: 1,
-      title: "How Teade VR is empowering Frontier Transformation with Intelligence + Trust",
+      title: "What Is Immersive Vocational Training",
       date: "Jan 27, 2026",
       author: "Judson Althoff - CEO, Teade VR commercial business",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/12/OMB-FY26Q2-Hero.jpg",
@@ -14,19 +14,27 @@ const BlogArticles = () => {
     },
     {
       id: 2,
-      title: "Maia 200: The AI accelerator built for inference",
+      title: "What Is the Difference Between Traditional Workshops and VR Labs?",
       date: "Jan 26, 2026",
       author: "Scott Guthrie - Executive Vice President, Cloud + AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2026/01/Maia200_header-960x540.jpg",
       link: "/blog-articles/maia-200-ai-accelerator-for-inference"
-    }
+    },
+    {
+      id: 3,
+      title: "The Next Decade of Vocational Education: Immersive, Measurable, Scalable",
+      date: "Jan 27, 2026",
+      author: "Judson Althoff - CEO, Teade VR commercial business",
+      image: "https://blogs.microsoft.com/wp-content/uploads/2026/01/OMB-Open-to-Work-Book-Hero-Final-960x540.jpg",
+      link: "/blog-articles/how-teade-vr-is-empowering-frontier-transformation"
+    },
   ];
 
   // More news articles array
   const moreNews = [
     {
       id: 1,
-      title: "Infinite scale: The architecture behind the Azure AI superfactory",
+      title: "Why Immersive VR Is Redefining Practical Skill Development in 2026",
       date: "Nov 12, 2025",
       author: "Scott Guthrie - Executive Vice President, Cloud + AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-Datacenter-11_11-Hero-480x270.jpg",
@@ -34,7 +42,7 @@ const BlogArticles = () => {
     },
     {
       id: 2,
-      title: "Bridging the AI divide: How Frontier Firms are transforming business",
+      title: "How VR Reduces Training Risk While Increasing Competency",
       date: "Nov 11, 2025",
       author: "Alysa Taylor - Chief Marketing Officer, Commercial Cloud & AI",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-IDC-25-Art-Hero-Final_Final-480x270.png",
@@ -42,7 +50,7 @@ const BlogArticles = () => {
     },
     {
       id: 3,
-      title: "Beware of double agents: How AI can fortify — or fracture — your cybersecurity",
+      title: "Why Data-Driven Skill Tracking Is the Future of Workforce Planning",
       date: "Nov 5, 2025",
       author: "Charlie Bell - Executive Vice President Security",
       image: "https://blogs.microsoft.com/wp-content/uploads/2025/11/OMB-Security-11-5-Hero_Final-480x270.jpg",
