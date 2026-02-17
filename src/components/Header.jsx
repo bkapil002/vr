@@ -15,7 +15,7 @@ export default function Header() {
   { name: "HVAC", path: "/vrhvac" },
   { name: "Mechatronics", path: "/vrmechatronics" },
   { name: "Healthcare", path: "/vrsterile" },
-  { name: "Support", path: "" },
+  { name: "Support", path: "/support-center" },
 ];
 
   return (
