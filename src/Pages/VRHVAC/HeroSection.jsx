@@ -1,12 +1,12 @@
 import React from 'react'
-
+import VRHVAC from '../../image/drthj.png'
 const HeroSection = () => {
     return (
         <div className="relative w-full h-[280px] md:h-[380px] lg:h-[480px] overflow-hidden ">
             {/* Background Image with Overlay */}
             <div className="absolute inset-0">
                 <img
-                    src="https://vrwelding.org/wp-content/uploads/2025/05/vrweldabout-2-e1747132080225.png"
+                    src={VRHVAC}
                     alt="VRweld training community"
                     className="w-full h-full object-cover"
                 />

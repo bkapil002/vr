@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import heroimage from '../../image/dergh.png'
 const VRWeldHero = () => {
   const [videoLoaded, setVideoLoaded] = useState(false)
 
@@ -15,7 +15,8 @@ const VRWeldHero = () => {
 
           {/* Video wrapper with overflow hidden */}
           <div className="absolute inset-0 overflow-hidden">
-            <iframe
+            <img src={heroimage} onLoad={() => setVideoLoaded(true)} className=' object-contain object-cover w-full h-'/>
+            {/* <
               className="
     absolute top-1/2 left-1/2
     w-[100vw] h-[100vh]
@@ -29,7 +30,7 @@ const VRWeldHero = () => {
               allow="autoplay; encrypted-media"
               loading="eager"
               onLoad={() => setVideoLoaded(true)}
-            />
+            /> */}
 
           </div>
 
