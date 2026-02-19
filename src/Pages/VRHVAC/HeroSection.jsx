@@ -1,5 +1,5 @@
 import React from 'react'
-import VRHVAC from '../../image/drthj.png'
+import VRHVAC from '../../image/12hvac.jpg'
 const HeroSection = () => {
     return (
         <div className="relative w-full h-[280px] md:h-[380px] lg:h-[480px] overflow-hidden ">
@@ -11,7 +11,7 @@ const HeroSection = () => {
                     className="w-full h-full object-cover"
                 />
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black/60"></div>
+                <div className="absolute inset-0 bg-black/40"></div>
             </div>
 
             {/* Content */}
