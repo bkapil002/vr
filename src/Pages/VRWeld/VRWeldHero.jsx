@@ -7,7 +7,7 @@ const VRWeldHero = () => {
     <div className="w-full ">
       <div className="relative w-full">
 
-        <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px] relative bg-black">
+        <div className="w-full  h-[400px] sm:h-[500px] lg:h-[600px]  relative bg-black">
           {/* Loading placeholder */}
           {!videoLoaded && (
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black animate-pulse" />

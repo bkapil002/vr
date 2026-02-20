@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Hero = () => {
+    const [videoLoaded, setVideoLoaded] = useState(false)
+  
   return (
     <div className="w-full bg-white mb-9 lg:mb-10">
 
@@ -9,24 +11,28 @@ const Hero = () => {
 
         {/* Hero Image */}
         <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px]">
-          <picture>
-            {/* Desktop */}
-            <source
-              media="(min-width: 1024px)"
-              srcSet="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1400&q=80"
+           {!videoLoaded && (
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black animate-pulse" />
+          )}
+
+          <div className="absolute inset-0 overflow-hidden">
+            <iframe
+              className="
+    absolute top-1/2 left-1/2
+    w-[100vw] h-[100vh]
+    -translate-x-1/2 -translate-y-1/2
+    scale-[2.4] sm:scale-[1.6] lg:scale-[1.2]
+    pointer-events-none
+  "
+              src="https://www.youtube.com/embed/DFBB6khs1Y8?autoplay=1&mute=1&loop=1&playlist=DFBB6khs1Y8&controls=0&disablekb=1&fs=0&rel=0&modestbranding=1&playsinline=1&enablejsapi=1&vq=hd1080"
+              title="VR Welding Training Background Video"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              loading="eager"
+              onLoad={() => setVideoLoaded(true)}
             />
-            {/* Tablet */}
-            <source
-              media="(min-width: 640px)"
-              srcSet="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1083&q=80"
-            />
-            {/* Mobile */}
-            <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=860&q=80"
-              alt="TradeVR — Building Skill, Strengthening Futures"
-              className="w-full h-full object-cover"
-            />
-          </picture>
+
+          </div>
         </div>
 
         {/* Desktop Overlay Card */}
